@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css?t=1663091362364">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header__wrap">
+                <a href="#" class="logo header__logo">
+                    <img src="img/logo.svg" alt="Логотип" class="logo__pic" width="185" height="96">
+                </a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Главная</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Фото и видео</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Форма отзыва</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">HtmlAcademy</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button type="button" aria-label="открыть меню" class="header__burger">
+                    <span class="burger__liner"></span>
+                </button>
+            </div>
+            <div class="header__content">
+                <img src="img/header-content.svg" alt="Заголовок" class="header__pic" width="282" height="214">
+            </div>
+        </header>
+        <main class="main">
+            <section class="main__content">
+                <h3 class="main__content-title">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h3>
+                <p class="main__content-decr">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+                <ol class="content">
+                    <li class="content__list-item">
+                        <h3 class="content__title">Настоящий городок</h3>
+                        <p class="item__decr">-№1- Седона нет аттракционов для туристов, там течет своя жизнь</p>
+                        <img src="img/photo-city.jpg" class="list__item-pic" alt="Фото города Седона">
+                        <ul class="list__item">
+                            <li class="item">
+                                <img src="img/home.svg" alt="картинка дома" class="item-pic" width="39" height="37">
+                                <h3 class="item__title">Жилье</h3>
+                                <p class="item__decr">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                            </li>
+                            <li class="item">
+                                <img src="img/eat.svg" alt="картинка дома" class="item-pic" width="39" height="37">
+                                <h3 class="item__title">Еда</h3>
+                                <p class="item__decr">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+                            </li>
+                            <li class="item">
+                                <img src="img/eat.svg" alt="картинка дома" class="item-pic" width="39" height="37">
+                                <h3 class="item__title">Сувениры</h3>
+                                <p class="item__decr">Не только китайского, но и местного производства!</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="content__list-item">
+                        <h3 class="content__title">Там есть мост дьявола</h3>
+                        <p class="item__decr">-№2- Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+                        <img src="img\photo-bridge.jpg" class="list__item-pic" alt="Фото города Седона">
+                    </li>
+                    <li class="content__list-item">
+                        <h3 class="content__title">Небольшая площадь</h3>
+                        <p class="item__decr">— №3 — Все интересные места находятся очень близко</p>
+                    </li>
+                    <li class="content__list-item">
+                        <h3 class="content__title">Красивая дорога</h3>
+                        <p class="item__decr">— №4 — ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!
+                        </p>
+                    </li>
+                    <li class="content__list-item">
+                        <h3 class="content__title">Мало туристов</h3>
+                        <p class="item__decr">— №5 — Большинство едет в гранд каньон и толпится там</p>
+                    </li>
+                </ol>
+            </section>
+        </main>
+    </div>
+</body>
+<script>
+    const nav = document.querySelector(".nav");
+    const header__burger = document.querySelector(".header__burger");
+    header__burger.addEventListener("click", function () {
+        nav.classList.toggle("_active");
+        header__burger.classList.toggle("_active");
+    })
+</script>
+
+</html>
