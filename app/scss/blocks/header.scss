@@ -1,0 +1,92 @@
+.header__wrap {
+    display: flex;
+    justify-content: end;
+    padding: 17px 20px;
+    position: relative;
+}
+
+.header__logo {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translateX(50%);
+    z-index: 4;
+}
+
+.header__content {
+    background-color: #2a404a;
+    background-image: url('../img/bg-content-header.jpg');
+    padding: 90px 0 85px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.header__content::after {
+    content: "";
+    background: url('../img/decor-triangle.svg') no-repeat center bottom;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 57px;
+}
+
+.header__burger {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: block;
+    z-index: 6;
+}
+
+.burger__liner {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 4px;
+    width: 23px;
+    left: 50%;
+    background-color: #81B3D2;
+}
+
+.burger__liner::before,
+.burger__liner::after {
+    content: "";
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(7px);
+    background-color: #81B3D2;
+    transition: transform 0.2s ease;
+}
+
+.header__burger span::after {
+    transform: translateY(-7px);
+}
+
+.burger__liner span::after {
+    transform: translateY(-7px);
+}
+
+.header__burger._active .burger__liner {
+    background-color: transparent;
+}
+
+.header__burger._active .burger__liner::before {
+    transform: translateY(0) rotate(45deg);
+    background-color: #fff;
+}
+.header__burger._active .burger__liner::after {
+    transform: translateY(0) rotate(-45deg);
+    background-color: #fff;
+}
