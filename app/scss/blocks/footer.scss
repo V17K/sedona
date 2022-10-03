@@ -1,0 +1,41 @@
+.footer {
+  text-align: center;
+  margin-top: 39px;
+}
+
+.inst {
+    @include font(21px, 26px, 700, $basic-family);
+    text-transform: uppercase;
+    color: #000;
+    margin: 0;
+    text-decoration: none;
+}
+
+.footer__social {
+    padding-top: 34px;
+    padding-bottom: 40px;
+}
+
+
+.footer-pic {
+    background-color: #81B3D2;
+    padding: 12px;
+    margin-left: 6px;
+}
+
+
+.copywrite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.copywrite-title {
+    @include font(14px, 21px, 400, $basic-family);
+    text-transform: uppercase;
+}
+
+.copy-pic {
+    padding-left: 15px;
+}

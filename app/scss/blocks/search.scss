@@ -1,0 +1,30 @@
+.search {
+    padding: 38px 30px 49px 30px;
+    text-align: center;
+}
+
+.search__title {
+    margin: 0;
+    @include font(18px, 26px, 700, $basic-family);
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.search__description {
+    margin: 0;
+    @include font(14px, 21px, 400, $basic-family);
+    text-transform: uppercase;
+    padding-bottom: 32px;
+}
+
+.search__button {
+    display: block;
+    margin: 0 auto;
+    padding: 16px 49px;
+    background-color: #81B3D2;
+    border: 0;
+    text-transform: uppercase;
+    color: #fff;
+    @include font(18px, 26px, 700, $basic-family);
+    cursor: pointer;
+}

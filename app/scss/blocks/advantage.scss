@@ -1,0 +1,126 @@
+.advantage {
+    list-style: none;
+    
+}
+
+.advantage__list {
+    background-color: #81B3D2;
+    list-style: none;
+    position: relative;
+    text-align: center;
+    @include media($tablet){
+        display: flex;
+    }
+}
+
+.advantage__list--decor::after {
+    content: "";
+    height: 37px;
+    background: url(../img/decor-triangle-main.svg) no-repeat center top;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    @include media($tablet){
+        display: none;
+    }
+}
+
+.advantage__title {
+    @include font(18px, 26px, 700, $basic-family);
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0;
+    padding-bottom: 11px;
+}
+
+.advantage__number {
+    @include font(14px, 21px, 400, $basic-family);
+    text-transform: uppercase;
+    color: #fff;
+    display: block;
+    padding-bottom: 17px;    
+}
+
+.advantage__description {
+    @include font(14px, 21px, 400, $basic-family);
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0;
+}
+
+.advantage-pic {
+    width: 100%;
+    height: 260px;
+    display: block;
+    object-fit: cover;
+}
+
+.advantage__list-item {
+    list-style: none;
+    padding: 23px 18px 17px 18px;
+    @include media($tablet){
+        display: flex;
+    }
+}
+
+.advantage__about {
+    display: flex;
+    padding-bottom: 25px;
+}
+
+
+.advantage__item {
+    padding-left: 10px;
+}
+
+.advantage__item-title {
+    @include font(18px, 26px, 700, $basic-family);
+    text-transform: uppercase;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.advantage__item-description {
+    @include font(14px, 21px, 400, $basic-family);
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.about__all {
+    list-style: none;
+    background-color: #EEEEEE;
+    position: relative;
+    text-align: center;
+    padding: 26px;
+}
+
+.about__all:not(:last-child)::before {
+    content: "";
+    border-bottom: 1px solid #D6D6D6;
+    position: absolute;
+    bottom: 0;
+    left: 18px;
+    right: 18px;
+}
+
+.about__all-title {
+    margin: 0;
+    @include font(18px, 26px, 700, $basic-family);
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+.about__all-number {
+    @include font(14px, 21px, 400, $basic-family);
+    text-transform: uppercase;
+    color: #333333;
+    padding-bottom: 15px;
+    display: block;
+}
+
+.about__all-description {
+    margin: 0;
+    @include font(14px, 21px, 400, $basic-family);
+    text-transform: uppercase;
+    color: #333333;
+}

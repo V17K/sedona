@@ -1,8 +1,12 @@
 .header__wrap {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     padding: 17px 20px;
     position: relative;
+    @include media($tablet){
+        display: block;
+        padding: 0;
+    }
 }
 
 .header__logo {
@@ -16,13 +20,19 @@
 .header__content {
     background-color: #2a404a;
     background-image: url('../img/bg-content-header.jpg');
-    padding: 90px 0 85px;
+    padding: 90px 19px 85px 19px;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: relative;
+    text-align: center;
+}
+
+.header__pic{
+    @include media($tablet){
+        width: 461px;
+        height: 350px;
+        padding: 77px 154px 91px 153px;
+    }
 }
 
 .header__content::after {
@@ -45,9 +55,12 @@
     cursor: pointer;
     display: block;
     z-index: 6;
+    @include media($tablet){
+        display: none;
+    }
 }
 
-.burger__liner {
+.header__burger-line {
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -57,8 +70,8 @@
     background-color: #81B3D2;
 }
 
-.burger__liner::before,
-.burger__liner::after {
+.header__burger-line::before,
+.header__burger-line::after {
     content: "";
     height: 4px;
     width: 100%;
@@ -74,19 +87,19 @@
     transform: translateY(-7px);
 }
 
-.burger__liner span::after {
+.header__burger-line span::after {
     transform: translateY(-7px);
 }
 
-.header__burger._active .burger__liner {
+.header__burger._active .header__burger-line {
     background-color: transparent;
 }
 
-.header__burger._active .burger__liner::before {
+.header__burger._active .header__burger-line::before {
     transform: translateY(0) rotate(45deg);
     background-color: #fff;
 }
-.header__burger._active .burger__liner::after {
+.header__burger._active .header__burger-line::after {
     transform: translateY(0) rotate(-45deg);
     background-color: #fff;
 }

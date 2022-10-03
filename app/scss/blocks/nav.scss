@@ -7,6 +7,11 @@
     transition: opacity 0.2s ease;
     overflow: auto;
     opacity: 0;
+    @include media($tablet){
+        position: static;
+        opacity: 1;
+        transition: none;
+    }
 }
 .nav._active {
     opacity: 1;
@@ -16,6 +21,11 @@
     background-color: #81B3D2;
     position: relative;
     margin: 0;
+    padding: 0;
+    @include media($tablet){
+        background-color: transparent;
+        display: flex;
+    }
 }
 
 .nav__list::after {
@@ -26,6 +36,9 @@
     bottom: 0;
     height: 7px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+    @include media($tablet){
+        display: none;
+    }
 }
 
 .nav__item {
@@ -36,6 +49,12 @@
     line-height: 26px;
     white-space: nowrap;
     position: relative;
+    @include media($tablet){
+        width: 20%;
+        &:nth-child(2){
+            margin-right: 20%;
+        }
+    }
 }
 
 .nav__item:not(:last-child)::after {
@@ -46,6 +65,9 @@
     left: 0;
     right: 0;
     bottom: 0;
+    @include media($tablet){
+        display: none;
+    }
 }
 
 .nav__link {
@@ -56,5 +78,21 @@
     padding: 17px;
     display: block;
     text-align: center;
+    @include media($tablet){
+        @include font(14px, 21px, 700);
+        color: #000;
+        transition: color .2s ease;
+        @include hover{
+            &:not(.nav__link--current){
+                color: #81B3D2;
+            }
+        }
+        &:active:not(&--current){
+            color: rgba(#000, .3);
+        }
+        &--current{
+            color: #766357;
+        }
+    }
 
 }

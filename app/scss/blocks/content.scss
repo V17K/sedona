@@ -1,0 +1,17 @@
+.content{
+    text-align: center;
+    padding: 32px 20px 16px 20px;
+}
+
+.content__title {
+    text-transform: uppercase;
+    padding-bottom: 35px;
+    margin: 0;
+    @include font(18px, 26px, 700, $basic-family);
+}
+
+.content__description {
+    text-transform: uppercase;
+    margin: 0;
+    @include font(14px, 21px, 400, $basic-family);
+}
