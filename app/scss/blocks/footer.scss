@@ -1,6 +1,10 @@
 .footer {
-  text-align: center;
-  margin-top: 39px;
+    text-align: center;
+    @include media($tablet) {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
 }
 
 .inst {
@@ -16,26 +20,3 @@
     padding-bottom: 40px;
 }
 
-
-.footer-pic {
-    background-color: #81B3D2;
-    padding: 12px;
-    margin-left: 6px;
-}
-
-
-.copywrite {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 30px;
-}
-
-.copywrite-title {
-    @include font(14px, 21px, 400, $basic-family);
-    text-transform: uppercase;
-}
-
-.copy-pic {
-    padding-left: 15px;
-}

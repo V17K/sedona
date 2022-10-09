@@ -1,0 +1,28 @@
+.social{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.social__item{
+    list-style-type: none;
+}
+
+.social__pic {
+    padding: 12px;
+    margin-left: 6px;
+    width: 24px;
+    height: 24px;
+    color: #fff;
+    background-color: #81B3D2;
+    transition: background-color .2s ease, color .2s ease;
+}
+
+.social__pic:hover{
+    background-color: #669EC0;
+}
+
+.social__pic:active{
+    background-color: #5496BD;
+    color: rgba(255, 255, 255, .3 );
+}

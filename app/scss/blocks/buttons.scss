@@ -1,0 +1,41 @@
+.btn {
+    border: 0;
+    background-color: transparent;
+    color: #000;
+    text-decoration: none;
+    font: 700 18px / 24px sans-serif;
+    cursor: pointer;
+    border-radius: 0;
+    padding: 4px 8px;
+    display: inline-block;
+    vertical-align: top;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease, color 0.2s ease, opacity 0.2s ease;
+}
+
+.btn--brand {
+    background-color: #81B3D2;
+    color: #fff;
+}
+
+.btn--brand:hover {
+    background-color: #669EC0;
+    color: #fff;
+}
+
+.btn--brand:active {
+    background-color: #5496BD;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.btn--medium {
+    padding: 16px 50px;
+    @include media($tablet){
+        padding: 15px 121px;
+    }
+}
+
+.btn:disabled {
+    pointer-events: none;
+    opacity: .5;
+}

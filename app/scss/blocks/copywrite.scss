@@ -1,0 +1,30 @@
+.copywrite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    @include font(14px, 21px, null, $basic-family);
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    transition: color .2s ease;
+    @include media($tablet) {
+        padding-bottom: 0;
+    }
+}
+
+.copywrite:hover{
+    color: #81B3D2;
+}
+
+
+.copywrite:active{
+    color: #B3B3B3;
+}
+
+
+.copywrite__pic {
+    padding-left: 10px;
+    width: 36px;
+    height: 36px;
+}

@@ -6,6 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="css/main.css">
+  <svg xmlns="http://www.w3.org/2000/svg" display="none">
+    <symbol id="yt" viewBox="0 0 24 24">
+      <path
+        d="M19.1813 5H4.81331C3.30618 5 2 6.3 2 7.8V16.1C2 17.7 3.30618 19 4.81331 19H19.1813C20.7889 19 21.9946 17.7 21.9946 16.2V7.8C22.095 6.3 20.7889 5 19.1813 5ZM9.03326 15.4V8.6L15.8656 12L9.03326 15.4Z"
+        fill="currentColor" />
+    </symbol>
+    <symbol id="vk" viewBox="0 0 24 24">
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M23.45 5.948C23.616 5.402 23.45 5 22.655 5H20.03C19.362 5 19.054 5.347 18.887 5.73C18.887 5.73 17.552 8.926 15.661 11.002C15.049 11.604 14.771 11.795 14.437 11.795C14.27 11.795 14.019 11.604 14.019 11.057V5.948C14.019 5.292 13.835 5 13.279 5H9.151C8.734 5 8.483 5.304 8.483 5.593C8.483 6.214 9.429 6.358 9.526 8.106V11.904C9.526 12.737 9.373 12.888 9.039 12.888C8.149 12.888 5.984 9.677 4.699 6.003C4.45 5.288 4.198 5 3.527 5H0.9C0.15 5 0 5.347 0 5.73C0 6.412 0.89 9.8 4.145 14.281C6.315 17.341 9.37 19 12.153 19C13.822 19 14.028 18.632 14.028 17.997V15.684C14.028 14.947 14.186 14.8 14.715 14.8C15.105 14.8 15.772 14.992 17.33 16.467C19.11 18.216 19.403 19 20.405 19H23.03C23.78 19 24.156 18.632 23.94 17.904C23.702 17.18 22.852 16.129 21.725 14.882C21.113 14.172 20.195 13.407 19.916 13.024C19.527 12.533 19.638 12.314 19.916 11.877C19.916 11.877 23.116 7.451 23.449 5.948H23.45Z"
+        fill="currentColor" />
+    </symbol>
+    <symbol id="Telegramm" viewBox="0 0 24 24">
+      <path
+        d="M22.4392 4.62225L19.2705 19.566C19.0312 20.6205 18.408 20.883 17.5222 20.3865L12.6937 16.8285L10.3642 19.0695C10.1062 19.3275 9.89099 19.5428 9.39374 19.5428L9.74099 14.6258L18.6892 6.54C19.0785 6.1935 18.6045 6.00075 18.0847 6.348L7.02224 13.314L2.25974 11.823C1.22399 11.4998 1.20524 10.7873 2.47574 10.29L21.1035 3.11325C21.966 2.79 22.7205 3.30525 22.4392 4.623V4.62225Z"
+        fill="currentColor" />
+    </symbol>
+    <symbol id="copywrite" viewBox="0 0 36 36">
+      <path
+        d="M18.1506 2.25H18.0502L4.5 3.58944V27.221L18.0502 34.875L31.5 27.221V3.58944L18.1506 2.25ZM29.5929 13.8266L18.0502 7.32075V7.22507H17.9498L17.8494 7.1294V7.22507L6.40706 13.8266V5.21591L17.9498 4.06782L29.5929 5.21591V13.8266ZM17.9498 8.75587L29.4926 15.1661L24.9758 17.6536L17.8494 13.6353V14.9747L23.7714 18.3233L22.868 18.8017L17.8494 15.9315V17.2709L21.6636 19.4714L20.8606 19.9498L17.8494 18.2276V19.5671L19.7565 20.6195L17.9498 21.6719L6.50743 15.2617L17.9498 8.75587ZM6.40706 16.6968L17.8494 23.2027V24.1595L9.92007 19.6628V21.0022L17.9498 25.5946V26.647L9.92007 22.1503V23.4897L17.9498 28.0821L26.0799 23.3941V18.419L29.4926 16.5055V26.0729L17.9498 32.6745L6.40706 26.1686V16.6968Z"
+        fill="currentColor" />
+    </symbol>
+  </svg>
+
 </head>
 
 <body>
@@ -45,67 +68,75 @@
           <h3 class="content__title">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h3>
           <p class="content__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </div>
-        <ol class="about">
-          <li class="advantage">
-            <div class="advantage__list advantage__list--decor">
-              <h3 class="advantage__title">Настоящий городок</h3>
-              <span class="advantage__number">- №1 -</span>
-              <p class="advantage__description">Седона нет аттракционов для туристов, там течет своя жизнь</p>  
-              <img src="img/photo-city.jpg" alt="Фото города" class="advantage-pic" width="320" height="260">
+        <ol class="adv">
+          <li class="adv__list adv__list--decor">
+            <div class="adv__item">
+              <div class="adv__title">
+                <h3 class="adv__heading">Настоящий городок</h3>
+                <span class="adv__number">- №1 -</span>
+                <p class="adv__descr">Седона нет аттракционов для туристов, там течет своя жизнь</p>
+              </div>
+              <div class="adv__pic">
+                <img src="img/photo-city.jpg" alt="Фото города" class="adv__photo" width="320" height="260">
+              </div>
             </div>
-            <ul class="advantage__list-item">
-              <li class="advantage__about">
-                <img src="img/home.svg" alt="картинка дома" class="advantage__item-pic" width="39" height="37">
-                <div class="advantage__item">
-                  <h3 class="advantage__item-title">Жилье</h3>
-                  <p class="advantage__item-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            <ul class="adv__about">
+              <li class="adv__about-item">
+                <img src="img/home.svg" alt="картинка дома" class="adv__about-pic" width="39" height="37">
+                <div class="adv__about-title">
+                  <h3 class="adv__about-heading">Жилье</h3>
+                  <p class="adv__about-descr">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </div>
               </li>
-              <li class="advantage__about">
-                <img src="img/eat.svg" alt="картинка дома" class="advantage__item-pic" width="39" height="37">
-                <div class="advantage__item">
-                  <h3 class="advantage__item-title">Еда</h3>
-                  <p class="advantage__item-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              <li class="adv__about-item">
+                <img src="img/eat.svg" alt="картинка дома" class="adv__about-pic" width="39" height="37">
+                <div class="adv__about-title">
+                  <h3 class="adv__about-heading">Еда</h3>
+                  <p class="adv__about-descr">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                 </div>
               </li>
-              <li class="advantage__about">
-                <img src="img/box.svg" alt="картинка дома" class="advantage__item-pic" width="39" height="37">
-                <div class="advantage__item">
-                  <h3 class="advantage__item-title">Сувениры</h3>
-                  <p class="advantage__item-description">Не только китайского, но и местного производства!</p>
+              <li class="adv__about-item">
+                <img src="img/box.svg" alt="картинка дома" class="adv__about-pic" width="39" height="37">
+                <div class="adv__about-title">
+                  <h3 class="adv__about-heading">Сувениры</h3>
+                  <p class="adv__about-descr">Не только китайского, но и местного производства!</p>
                 </div>
               </li>
             </ul>
           </li>
-          <li class="advantage advantage--bridge">
-            <div class="advantage__list">
-              <h3 class="advantage__title">Там есть мост дьявола</h3>
-              <span class="advantage__number">- №2 -</span>
-              <p class="advantage__description">Да, по нему можно пройти! Если вы осмелитесь, конечно </p>
-              <img src="img\photo-bridge.jpg" alt="Фото моста" class="advantage-pic">
+          <li class="adv__list">
+            <div class="adv__item adv__item--brige">
+              <div class="adv__title adv__title--bridge">
+                <h3 class="adv__heading">Там есть мост дьявола</h3>
+                <span class="adv__number">- №2 -</span>
+                <p class="adv__descr">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+              </div>
+              <div class="adv__pic">
+                <img src="img/photo-bridge.jpg" alt="Фото моста" class="adv__photo" width="320" height="260">
+              </div>
             </div>
+          </li>  
+          <li class="adv__etc">
+              <h3 class="adv__etc-heading">Небольшая площадь</h3>
+              <span class="adv__etc-number">- №3 -</span>
+              <p class="adv__etc-descr">Все интересные места находятся очень близко</p>
           </li>
-          <li class="about__all">
-            <h3 class="about__all-title">Небольшая площадь</h3>
-            <span class="about__all-number">- №3 -</span>
-            <p class="about__all-description">Все интересные места находятся очень близко</p>
+          <li class="adv__etc">
+              <h3 class="adv__etc-heading">Красивая дорога</h3>
+              <span class="adv__etc-number">- №4 -</span>
+              <p class="adv__etc-descr">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-          <li class="about__all">
-            <h3 class="about__all-title">Красивая дорога</h3>
-            <span class="about__all-number">- №4 -</span>
-            <p class="about__all-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </li>
-          <li class="about__all">
-            <h3 class="about__all-title">Мало туристов</h3>
-            <span class="about__all-number">- №5 -</span>
-            <p class="about__all-description">Большинство едет в гранд каньон и толпится там</p>
+          <li class="adv__etc">
+              <h3 class="adv__etc-heading">Мало туристов</h3>
+              <span class="adv__etc-number">- №5 -</span>
+              <p class="adv__etc-descr">Большинство едет в гранд каньон и толпится там</p>
           </li>
         </ol>
         <div class="search">
           <h2 class="search__title">Заинтересовалсь?</h2>
           <p class="search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
             гостиниц в седоне</p>
-          <button class="search__button" type="submit">Найти гостинницу</button>
+          <button class="btn btn--brand btn--medium" type="submit">Найти гостинницу</button>
         </div>
         <div class="map">
           <img src="img/map.svg" alt="Карта" class="map-pic" width="1200px" height="350px">
@@ -113,14 +144,35 @@
         <footer class="footer">
           <a href="#" class="inst">#visitSEDONA</a>
           <div class="footer__social">
-            <a href="#" class="footer__vk"><img src="img/vk.svg" alt="Страница вконтакте" class="footer-pic" width="24" height="24"></a>
-            <a href="#" class="footer__telegram"><img src="img/telegram.svg" alt="Страница телеграмма" class="footer-pic" width="24" height="24"></a>
-            <a href="#" class="footer__youtube"><img src="img/youtube.svg" alt="Страница Ютуб" class="footer-pic" width="24" height="24"></a>
+            <ul class="social">
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <svg class="social__pic">
+                    <use href="#vk" />
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <svg class="social__pic">
+                    <use href="#yt" />
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <svg class="social__pic">
+                    <use href="#Telegramm" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
-          <div class="copywrite">
-            <h3 class="copywrite-title">Разработано</h3>
-            <a href="copywrite__web"><img src="img/copy.svg" alt="Копирайт" class="copy-pic" width="27" height="34"></a>
-          </div>
+          <a href="#" class="copywrite">Разработано
+            <svg class="copywrite__pic">
+              <use href="#copywrite" />
+            </svg>
+          </a>
         </footer>
       </section>
     </main>

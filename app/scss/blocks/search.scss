@@ -8,6 +8,9 @@
     @include font(18px, 26px, 700, $basic-family);
     text-transform: uppercase;
     padding-bottom: 20px;
+    @include media($tablet) {
+        @include font(30px, 26px, 700, $basic-family);
+    }
 }
 
 .search__description {
@@ -17,14 +20,3 @@
     padding-bottom: 32px;
 }
 
-.search__button {
-    display: block;
-    margin: 0 auto;
-    padding: 16px 49px;
-    background-color: #81B3D2;
-    border: 0;
-    text-transform: uppercase;
-    color: #fff;
-    @include font(18px, 26px, 700, $basic-family);
-    cursor: pointer;
-}

@@ -1,0 +1,173 @@
+.adv {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    @include media($tablet) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.adv__list {
+    list-style: none;
+    position: relative;
+    @include media($tablet) {
+        grid-column: 1/-1;
+    }
+}
+
+.adv__item {
+    position: relative;
+    @include media($tablet) {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+}
+
+.adv__item--brige {
+    @include media($tablet) {
+        order: 1;
+    }
+}
+
+.adv__list--decor::after {
+    content: "";
+    height: 37px;
+    background: url('../img/decor-triangle-main.svg') no-repeat center top;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    @include media($tablet) {
+        display: none;
+    }
+}
+
+.adv__heading {
+    @include font(18px, 26px, 700, $basic-family);
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.adv__title {
+    text-align: center;
+    padding: 60px 20px 40px;
+    background-color: #81B3D2;
+    @include media($tablet) {
+        padding: 40px 32px;
+    }
+}
+
+.adv__title--bridge {
+    padding-top: 39px;
+}
+
+.adv__number {
+    @include font(14px, 21px, 400, $basic-family);
+    text-transform: uppercase;
+    color: #fff;
+    display: block;
+    padding-bottom: 17px;
+}
+
+.adv__descr {
+    @include font(14px, 21px, 400, $basic-family);
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0;
+}
+
+.adv__photo {
+    width: 100%;
+    height: 260px;
+    display: block;
+    object-fit: cover;
+}
+
+.adv__about {
+    list-style: none;
+    padding: 23px 18px 27px;
+    @include media($tablet) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        gap: 32px;
+        padding-top: 60px;
+    }
+}
+
+.adv__about-item {
+    display: flex;
+    padding-bottom: 25px;
+    position: relative;
+    @include media($tablet) {
+        display: block;
+        text-align: center;
+    }
+}
+
+.adv__about-pic {
+    @include media($tablet) {
+        width: 75px;
+        height: 72px;
+        padding-bottom: 26px;
+    }
+}
+
+.adv__about-title {
+    padding-left: 10px;
+
+}
+
+.adv__about-heading {
+    @include font(18px, 26px, 700, $basic-family);
+    text-transform: uppercase;
+    margin: 0;
+    padding-bottom: 16px;
+}
+
+.adv__about-descr {
+    @include font(14px, 21px, 400, $basic-family);
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.adv__etc {
+    position: relative;
+    text-align: center;
+    padding: 26px 26px 24px;
+    background-color: #eee;
+}
+
+.adv__etc:not(:last-child)::before {
+    content: "";
+    border-bottom: 1px solid #D6D6D6;
+    position: absolute;
+    bottom: 0;
+    left: 18px;
+    right: 18px;
+    @include media($tablet) {
+        display: none;
+    }
+}
+
+.adv__etc-heading {
+    @include font(18px, 26px, 700, $basic-family);
+    color: #000;
+    text-transform: uppercase;
+}
+
+.adv__etc-number {
+    @include font(14px, 21px, 400, $basic-family);
+    color: #000;
+}
+
+.adv__etc-descr {
+    @include font(14px, 21px, 400, $basic-family);
+    text-transform: uppercase;
+    color: #000;
+}

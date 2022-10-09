@@ -56,7 +56,7 @@
     display: block;
     z-index: 6;
     @include media($tablet){
-        display: none;
+    display: none;
     }
 }
 
@@ -68,6 +68,10 @@
     width: 23px;
     left: 50%;
     background-color: #81B3D2;
+}
+
+.header__burger-line:hover{
+    color: rgba(129, 179, 210, .6);
 }
 
 .header__burger-line::before,
