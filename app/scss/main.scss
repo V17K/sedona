@@ -7,6 +7,7 @@
 @import 'mixins/mixins';
 
 //подключаем БЭМ блоки
+@import 'blocks/body';
 @import 'blocks/container';
 @import 'blocks/header';
 @import 'blocks/nav';
@@ -19,3 +20,7 @@
 @import 'blocks/social';
 @import 'blocks/copywrite';
 @import 'blocks/buttons';
+@import 'blocks/form';
+@import 'blocks/fieldset';
+@import 'blocks/data';
+@import 'blocks/legend';

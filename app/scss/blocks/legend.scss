@@ -1,0 +1,7 @@
+.legend{
+    text-align: center;
+    @include font(18px, 26px, 700, $basic-family);
+    text-transform: uppercase;
+    color: #000;
+    padding-bottom: 20px;
+}

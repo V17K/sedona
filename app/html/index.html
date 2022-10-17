@@ -31,37 +31,9 @@
 
 </head>
 
-<body>
+<body class="body">
   <div class="container">
-    <header class="header">
-      <div class="header__wrap">
-        <a href="#" class="logo header__logo">
-          <img src="img/logo.svg" alt="Логотип" class="logo__pic" width="185" height="96">
-        </a>
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#" class="nav__link nav__link--current">Главная</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Фото и видео</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Форма отзыва</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">HtmlAcademy</a>
-            </li>
-          </ul>
-        </nav>
-        <button type="button" aria-label="открыть меню" class="header__burger">
-          <span class="header__burger-line"></span>
-        </button>
-      </div>
-      <div class="header__content">
-        <img src="img/header-content.svg" alt="Заголовок" class="header__pic" width="282" height="214">
-      </div>
-    </header>
+    @@include('blocks/header.html')
     <main class="main">
       <section class="main__content">
         <div class="content">
@@ -105,8 +77,8 @@
             </ul>
           </li>
           <li class="adv__list">
-            <div class="adv__item adv__item--brige">
-              <div class="adv__title adv__title--bridge">
+            <div class="adv__item adv__item--reverse">
+              <div class="adv__title">
                 <h3 class="adv__heading">Там есть мост дьявола</h3>
                 <span class="adv__number">- №2 -</span>
                 <p class="adv__descr">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
@@ -133,9 +105,11 @@
           </li>
         </ol>
         <div class="search">
-          <h2 class="search__title">Заинтересовалсь?</h2>
-          <p class="search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
-            гостиниц в седоне</p>
+          <div class="search__heading">
+            <h2 class="search__title">Заинтересовалсь?</h2>
+            <p class="search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
+              гостиниц в седоне</p>
+          </div>
           <button class="btn btn--brand btn--medium" type="submit">Найти гостинницу</button>
         </div>
         <div class="map">

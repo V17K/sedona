@@ -1,0 +1,9 @@
+.data {}
+
+.data__input {
+    @include font(18px, 26px, 700, $basic-family);
+    padding: 16px;
+    background-color: #F2F2F2;
+}
+
+.data__label {}

@@ -2,9 +2,11 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+    margin-bottom: 40px;
     @include media($tablet) {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 60px;
     }
 }
 
@@ -21,12 +23,7 @@
     @include media($tablet) {
         display: grid;
         grid-template-columns: 1fr 2fr;
-    }
-}
-
-.adv__item--brige {
-    @include media($tablet) {
-        order: 1;
+        margin-bottom: 60px;
     }
 }
 
@@ -35,7 +32,7 @@
     height: 37px;
     background: url('../img/decor-triangle-main.svg') no-repeat center top;
     position: absolute;
-    top: 0;
+    top: -1px;
     right: 0;
     left: 0;
     @include media($tablet) {
@@ -81,7 +78,7 @@
 
 .adv__photo {
     width: 100%;
-    height: 260px;
+    height: 100%;
     display: block;
     object-fit: cover;
 }
@@ -96,7 +93,7 @@
         margin: 0;
         list-style-type: none;
         gap: 32px;
-        padding-top: 60px;
+        padding: 0 35px;
     }
 }
 
@@ -107,6 +104,7 @@
     @include media($tablet) {
         display: block;
         text-align: center;
+        max-width: 290px;
     }
 }
 
@@ -120,7 +118,9 @@
 
 .adv__about-title {
     padding-left: 10px;
-
+    @include media($tablet) {
+        padding: 0;
+    }
 }
 
 .adv__about-heading {
@@ -134,6 +134,7 @@
     @include font(14px, 21px, 400, $basic-family);
     text-transform: uppercase;
     margin: 0;
+
 }
 
 .adv__etc {
@@ -170,4 +171,13 @@
     @include font(14px, 21px, 400, $basic-family);
     text-transform: uppercase;
     color: #000;
+}
+
+.adv__item--reverse .adv__pic{
+    order: -1;
+}
+
+.adv__item--reverse{
+    grid-template-columns: 2fr 1fr;
+    margin-bottom: 0;
 }

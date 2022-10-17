@@ -6,5 +6,6 @@
     padding-bottom: 40px;
     @include media($tablet) {
         padding-bottom: 0;
+        margin-bottom: 35px;
     }
 }

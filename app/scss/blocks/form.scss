@@ -1,0 +1,51 @@
+.form{
+    
+}
+
+.form__data{
+    padding: 0 20px 15px 20px;
+}
+
+.form__label{
+    display: block;
+    padding-left: 16px;
+    @include font(14px, 21px, 400, $basic-family);
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.form__input{
+    padding: 23px 130px 20px 16px;
+    background-color: #F2F2F2;
+    border: 0;
+}
+
+.form__input--send{
+    padding: 23px 70px 20px 16px;
+}
+
+.form__input::placeholder{
+    @include font(18px, 26px, 700, $basic-family);
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.form__input:hover{
+    color: rgba(229, 229, 229, 1);
+}
+
+.form__data--btn{
+    border: 0;
+}
+
+.form__btn{
+    padding: 20px;
+    border: 0;
+}
+
+.form__pic{
+    width: 18px;
+    height: 18px;
+    color: #000;
+    
+}
+
