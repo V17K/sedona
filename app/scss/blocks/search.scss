@@ -19,9 +19,22 @@
 }
 
 .search__description {
-    margin: 0;
+    max-width: 260px;
+    margin: 0 auto;
     @include font(14px, 21px, 400, $basic-family);
     text-transform: uppercase;
     padding-bottom: 40px;
+    @include media($tablet) {
+        max-width: 440px;
+        margin: 0 auto;
+    }
+}
+
+.search__inner-descr{
+    padding: 0;
+    margin: 0;
+    @include font(12px, 21px, 400, $basic-family);
+    text-transform: uppercase;
+    color: rgba(51, 51, 51, 0.6);
 }
 

@@ -1,10 +1,8 @@
-.content{
+.content {
     text-align: center;
-    padding: 32px 20px 16px 20px;
-    max-width: 500px;
-    margin: 0 auto;
+    padding: 32px 20px 16px;
     @include media($tablet) {
-        padding-bottom: 56px;
+    padding-bottom: 56px;
     }
 }
 
@@ -16,7 +14,26 @@
 }
 
 .content__description {
+    max-width: 280px;
+    margin: 0 auto;
     text-transform: uppercase;
-    margin: 0;
     @include font(14px, 21px, 400, $basic-family);
+    @include media($tablet) {
+        max-width: 485px;
+        margin: 0 auto;
+        }
+}
+
+.content--form{
+    padding: 36px 20px 28px;
+    position: relative;
+}
+
+.content--form::before {
+    content: "";
+    border-bottom: 1px solid #e5e5e5;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }

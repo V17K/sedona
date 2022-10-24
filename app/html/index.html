@@ -33,7 +33,13 @@
 
 <body class="body">
   <div class="container">
-    @@include('blocks/header.html')
+    <div class="header">
+      @@include('blocks/header.html')
+      <div class="header__content">
+        <img src="img/header-content.svg" alt="Заголовок" class="header__pic" width="282" height="214">
+      </div>
+    </div>
+
     <main class="main">
       <section class="main__content">
         <div class="content">
@@ -87,21 +93,21 @@
                 <img src="img/photo-bridge.jpg" alt="Фото моста" class="adv__photo" width="320" height="260">
               </div>
             </div>
-          </li>  
-          <li class="adv__etc">
-              <h3 class="adv__etc-heading">Небольшая площадь</h3>
-              <span class="adv__etc-number">- №3 -</span>
-              <p class="adv__etc-descr">Все интересные места находятся очень близко</p>
           </li>
           <li class="adv__etc">
-              <h3 class="adv__etc-heading">Красивая дорога</h3>
-              <span class="adv__etc-number">- №4 -</span>
-              <p class="adv__etc-descr">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <h3 class="adv__etc-heading">Небольшая площадь</h3>
+            <span class="adv__etc-number">- №3 -</span>
+            <p class="adv__etc-descr">Все интересные места находятся очень близко</p>
           </li>
           <li class="adv__etc">
-              <h3 class="adv__etc-heading">Мало туристов</h3>
-              <span class="adv__etc-number">- №5 -</span>
-              <p class="adv__etc-descr">Большинство едет в гранд каньон и толпится там</p>
+            <h3 class="adv__etc-heading">Красивая дорога</h3>
+            <span class="adv__etc-number">- №4 -</span>
+            <p class="adv__etc-descr">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li class="adv__etc">
+            <h3 class="adv__etc-heading">Мало туристов</h3>
+            <span class="adv__etc-number">- №5 -</span>
+            <p class="adv__etc-descr">Большинство едет в гранд каньон и толпится там</p>
           </li>
         </ol>
         <div class="search">

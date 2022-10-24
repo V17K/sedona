@@ -1,5 +1,20 @@
+
 .fieldset{
     border: 0;
     margin: 0;
-    padding: 0;
+    position: relative;
+    padding: 0 0 30px 20px;
 }
+
+.fieldset:not(:last-child):before {
+    content: "";
+    border-bottom: 1px solid #e5e5e5;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+
+

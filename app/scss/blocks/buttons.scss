@@ -35,7 +35,120 @@
     }
 }
 
+.btn--small {
+    padding: 16px 34px;
+    @include media($tablet){
+        padding: 16px 55px;
+    }
+}
+
+
+
+
+
 .btn:disabled {
     pointer-events: none;
     opacity: .5;
+}
+
+
+.review {
+    display: block;
+    padding-bottom: 16px;
+}
+
+.review__label,
+.attraction__label {
+    @include font(18px, 26px, 700, $basic-family);
+    padding-left: 16px;
+}
+
+.review__origin {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.review__psevdo {
+    display: block;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: #F2F2F2;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.review__psevdo:after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #000;
+    left: 13px;
+    top: 13px;
+    opacity: 0;
+}
+
+.review__origin:checked ~ .review__psevdo:after {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.review--inline {
+    display: flex;
+    align-items: center;
+}
+
+.attraction{
+    display: flex;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+.attraction__psevdo {
+    display: block;
+    width: 46px;
+    height: 46px;
+    border-radius: 4px;
+    position: relative;
+    flex-shrink: 0;
+    background-color: #f2f2f2;
+}
+
+.attraction__psevdo:after {
+    content: "";
+    position: absolute;
+    inset: 6px;
+    border-radius: 50%;
+    background-color: #000;
+    transform: scale(0);
+    opacity: 1;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.attraction__origin:checked ~ .attraction__psevdo:after {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.attraction__origin {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }

@@ -27,14 +27,6 @@
         d="M18.1506 2.25H18.0502L4.5 3.58944V27.221L18.0502 34.875L31.5 27.221V3.58944L18.1506 2.25ZM29.5929 13.8266L18.0502 7.32075V7.22507H17.9498L17.8494 7.1294V7.22507L6.40706 13.8266V5.21591L17.9498 4.06782L29.5929 5.21591V13.8266ZM17.9498 8.75587L29.4926 15.1661L24.9758 17.6536L17.8494 13.6353V14.9747L23.7714 18.3233L22.868 18.8017L17.8494 15.9315V17.2709L21.6636 19.4714L20.8606 19.9498L17.8494 18.2276V19.5671L19.7565 20.6195L17.9498 21.6719L6.50743 15.2617L17.9498 8.75587ZM6.40706 16.6968L17.8494 23.2027V24.1595L9.92007 19.6628V21.0022L17.9498 25.5946V26.647L9.92007 22.1503V23.4897L17.9498 28.0821L26.0799 23.3941V18.419L29.4926 16.5055V26.0729L17.9498 32.6745L6.40706 26.1686V16.6968Z"
         fill="currentColor" />
     </symbol>
-    <symbol id="phone" viewBox="0 0 18 18">
-      <path
-        d="M3.6 7.8C5 10.6 7.4 12.9 10.2 14.4L12.4 12.2C12.7 11.9 13.1 11.8 13.4 12C14.5 12.4 15.7 12.6 17 12.6C17.6 12.6 18 13 18 13.6V17C18 17.6 17.6 18 17 18C7.6 18 0 10.4 0 1C0 0.4 0.4 0 1 0H4.5C5.1 0 5.5 0.4 5.5 1C5.5 2.2 5.7 3.4 6.1 4.6C6.2 4.9 6.1 5.3 5.9 5.6L3.6 7.8Z"
-        fill="currentColor" />
-    </symbol>
-    <symbol id="email" viewBox="0 0 16 12">
-      <path d="M8 8C7.7 8 7.5 7.9 7 7.7L0 4V11C0 11.5 0.5 12 1 12H15C15.5 12 16 11.5 16 11V4L9 7.7C8.5 7.9 8.3 8 8 8ZM15 0H1C0.5 0 0 0.5 0 1V1.8L8 6L16 1.8V1C16 0.5 15.5 0 15 0Z" fill="currentColor"/>
-    </symbol>
   </svg>
 
 </head>
@@ -42,9 +34,12 @@
 <body class="body">
   <div class="container">
     @@include('blocks/header.html')
+    <div class="header__content header__content--form">
+      <img src="img/header-form.svg" alt="Заголовок" class="header__pic header__pic--form" width="230" height="40">
+    </div>
     <main class="main">
       <section class="main__content">
-        <div class="content">
+        <div class="content content--form">
           <h3 class="content__title">Оставьте свой отзыв</h3>
           <p class="content__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
             вами достопримечательностях</p>
@@ -53,81 +48,79 @@
           <div class="form__field">
             <fieldset class="fieldset">
               <legend class="legend">Представьтесь</legend>
+              <label for="fname" class="form__label">Имя*:</label>
               <div class="form__data">
-                <label for="fname" class="form__label">Имя*:</label>
                 <input type="text" id="fname" name="fname" class="form__input" placeholder="Имя">
               </div>
+              <label for="surname" class="form__label">Фамилия*:</label>
               <div class="form__data">
-                <label for="surname" class="form__label">Фамилия*:</label>
                 <input type="text" id="surname" name="surname" class="form__input" placeholder="Фамилия">
               </div>
+              <label for="sname" class="form__label">Отчество:</label>
               <div class="form__data">
-                <label for="sname" class="form__label">Отчество:</label>
                 <input type="text" id="sname" name="sname" class="form__input" placeholder="Отчество">
               </div>
             </fieldset>
             <fieldset class="fieldset">
               <legend class="legend">Контактная информация</legend>
-              <div class="form__data form__data--btn">
-                <label for="phone" class="form__label">Контактный телефон*:</label>
-                <input type="text" id="phone" name="phone" placeholder="Введите телефон" class="form__input form__input--send">
-                <button type="submit" class="form__btn">
-                  <svg class="form__pic">
-                    <use href="#phone" />
-                  </svg>
-                </button>
+              <label for="phone" class="form__label">Контактный телефон*:</label>
+              <div class="form__data form__data--action form__data--phone">
+                <input type="text" id="phone" name="phone" placeholder="Введите телефон" class="form__input">
               </div>
-              <div class="form__data form__data--btn">
-                <label for="mail" class="form__label">Электронная почта*:</label>
-                <input type="text" id="email" name="e-mail" placeholder="Введите e-mail" class="form__input form__input--send">
-                <button type="submit" class="form__btn">
-                  <svg class="form__pic">
-                    <use href="#email" />
-                  </svg>
-                </button>
+              <label for="phone" class="form__label">"Электронная почта*:</label>
+              <div class="form__data form__data--action form__data--mail">
+                <input type="text" id="phone" name="phone" placeholder="Введите e-mail" class="form__input">
               </div>
             </fieldset>
+            <fieldset class="fieldset">
+              <legend class="legend">Ваше общее впечатление</legend>
+              <div class="review review--inline">
+                <input type="radio" id="plus" class="review__origin">
+                <span class="review__psevdo"></span>
+                <label for="plus" class="review__label">Скорее положительное</label>
+              </div>
+              <div class="review review--inline">
+                <input type="radio" id="plus" class="review__origin">
+                <span class="review__psevdo"></span>
+                <label for="plus" class="review__label">Скорее отрицательное</label>
+              </div>
+              <div class="review review--inline">
+                <input type="radio" id="plus" class="review__origin">
+                <span class="review__psevdo"></span>
+                <label for="plus" class="review__label">Затрудняюсь ответить</label>
+              </div>
+            </fieldset>
+            <fieldset class="fieldset">
+              <legend class="legend">Посещенные достопримечательности:</legend>
+              <div class="attraction">
+                <input type="checkbox" class="attraction__origin" id="bridge">
+                <span class="attraction__psevdo"></span>
+                <label for="bridge" class="attraction__label">Мост дьявола</label>
+              </div>
+              <div class="attraction">
+                <input type="checkbox" class="attraction__origin" id="mountin">
+                <span class="attraction__psevdo"></span>
+                <label for="mountin" class="attraction__label">Гора-колокол</label>
+              </div>
+              <div class="attraction">
+                <input type="checkbox" class="attraction__origin" id="park">
+                <span class="attraction__psevdo"></span>
+                <label for="park" class="attraction__label">Слайд-парк</label>
+              </div>
+              <div class="attraction">
+                <input type="checkbox" class="attraction__origin" id="rock">
+                <span class="attraction__psevdo"></span>
+                <label for="rock" class="attraction__label">Красные скалы</label>
+              </div>
+            </fieldset>
+            <fieldset class="fieldset">
+              <legend class="legend">Опишите свои эмоции</legend>
+              <textarea name="emotions" id="emotions" cols="30" rows="10" class="form__textarea">Опишите подробно все свои восторги</textarea>
+            </fieldset>
           </div>
-          <fieldset class="fieldset">
-            <legend class="legend">Ваше общее впечатление</legend>
-            <div class="review">
-              <input type="radio" id="plus">
-              <label for="plus">Скорее положительное</label><br>
-            </div>
-            <div class="review">
-              <input type="radio" id="minus">
-              <label for="minus">Скорее отрицательное</label><br>
-            </div>
-            <div class="review">
-              <input type="radio" id="neutral">
-              <label for="neutral">Затрудняюсь ответить</label><br>
-            </div>
-          </fieldset>
-          <fieldset class="fieldset">
-            <legend class="legend">Посещенный достопримечательности</legend>
-            <div class="attraction">
-              <input type="checkbox" id="bridge">
-              <label for="bridge">Мост Дьявола</label><br>
-            </div>
-            <div class="attraction">
-              <input type="checkbox" id="mountin">
-              <label for="mountin">Гора-колокол</label><br>
-            </div>
-            <div class="attraction">
-              <input type="checkbox" id="park">
-              <label for="park">Слайд-парк</label><br>
-            </div>
-            <div class="attraction">
-              <input type="checkbox" id="rock">
-              <label for="rock">Красные скалы</label><br>
-            </div>
-          </fieldset>
-          <fieldset class="fieldset">
-            <legend>Опишите свои эмоции</legend>
-            <textarea name="emotions" id="emotions" cols="30" rows="10">Опишите подробно все свои восторги</textarea>
-          </fieldset>
           <div class="search">
-            <button class="btn btn--brand btn--medium" type="submit">Отправить отзыв</button>
+            <button class="btn btn--brand btn--small" type="submit">Отправить отзыв</button>
+            <p class="search__inner-descr">* — обязательные поля</p>
           </div>
         </form>
         @@include('blocks/footer.html')
