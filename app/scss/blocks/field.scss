@@ -24,10 +24,12 @@
 
 .field__data--phone::after{
     background: url(../img/phone-icon.svg) no-repeat center center;
+    background-color: #E6E6E6;
 }
 
 .field__data--mail::after{
     background: url(../img/mail-icon.svg) no-repeat center center;
+    background-color: #E6E6E6;
 }
 
 .field__input {
