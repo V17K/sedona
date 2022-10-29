@@ -1,8 +1,7 @@
 .adv {
     list-style-type: none;
-    margin: 0;
+    margin: 0 0 40px;
     padding: 0;
-    margin-bottom: 40px;
     @include media($tablet) {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -25,6 +24,10 @@
         grid-template-columns: 1fr 2fr;
         margin-bottom: 60px;
     }
+}
+
+.adv__pic{
+    height: 255px;
 }
 
 .adv__list--decor::after {
@@ -52,9 +55,6 @@
     text-align: center;
     padding: 60px 20px 40px;
     background-color: #81B3D2;
-    @include media($tablet) {
-        padding: 40px 32px;
-    }
 }
 
 .adv__title--bridge {
@@ -89,11 +89,10 @@
     @include media($tablet) {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        padding: 0;
+        padding: 0 35px;
         margin: 0;
         list-style-type: none;
         gap: 32px;
-        padding: 0 35px;
     }
 }
 
@@ -104,7 +103,7 @@
     @include media($tablet) {
         display: block;
         text-align: center;
-       
+
     }
 }
 
@@ -133,9 +132,8 @@
 .adv__about-descr {
     @include font(14px, 21px, 400, $basic-family);
     text-transform: uppercase;
-    margin: 0;
-    max-width: 290px;
     margin: 0 auto;
+    max-width: 290px;
 
 }
 
@@ -179,11 +177,11 @@
     color: #000;
 }
 
-.adv__item--reverse .adv__pic{
+.adv__item--reverse .adv__pic {
     order: -1;
 }
 
-.adv__item--reverse{
+.adv__item--reverse {
     grid-template-columns: 2fr 1fr;
     margin-bottom: 0;
 }

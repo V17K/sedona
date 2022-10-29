@@ -37,13 +37,11 @@
 
 .btn--small {
     padding: 16px 34px;
+    width: 100%;
     @include media($tablet){
         padding: 16px 55px;
     }
 }
-
-
-
 
 
 .btn:disabled {
@@ -89,13 +87,15 @@
 .review__psevdo:after {
     content: "";
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     border-radius: 50%;
     background-color: #000;
-    left: 13px;
-    top: 13px;
+    left: 15px;
+    top: 15px;
     opacity: 0;
+    transform: scale(0);
+    transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
 .review__origin:checked ~ .review__psevdo:after {
@@ -122,6 +122,8 @@
     position: relative;
     flex-shrink: 0;
     background-color: #f2f2f2;
+    position: relative;
+    
 }
 
 .attraction__psevdo:after {
@@ -131,9 +133,11 @@
     border-radius: 50%;
     background-color: #000;
     transform: scale(0);
-    opacity: 1;
+    opacity: 0;
     transition: transform 0.2s ease, opacity 0.2s ease;
+    background: url(../img/tick.svg) no-repeat center center;
 }
+
 
 .attraction__origin:checked ~ .attraction__psevdo:after {
     transform: scale(1);

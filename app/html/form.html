@@ -48,79 +48,89 @@
           <div class="form__field">
             <fieldset class="fieldset">
               <legend class="legend">Представьтесь</legend>
-              <label for="fname" class="form__label">Имя*:</label>
-              <div class="form__data">
-                <input type="text" id="fname" name="fname" class="form__input" placeholder="Имя">
+              <div class="field">
+                <label for="fname" class="field__label">Имя*:</label>
+                <div class="field__data">
+                  <input type="text" id="fname" name="fname" class="field__input" placeholder="Имя">
+                </div>
               </div>
-              <label for="surname" class="form__label">Фамилия*:</label>
-              <div class="form__data">
-                <input type="text" id="surname" name="surname" class="form__input" placeholder="Фамилия">
+              <div class="field">
+                <label for="surname" class="field__label">Фамилия*:</label>
+                <div class="field__data">
+                  <input type="text" id="surname" name="surname" class="field__input" placeholder="Фамилия">
+                </div>
               </div>
-              <label for="sname" class="form__label">Отчество:</label>
-              <div class="form__data">
-                <input type="text" id="sname" name="sname" class="form__input" placeholder="Отчество">
+              <div class="field">
+                <label for="sname" class="field__label">Отчество:</label>
+                <div class="field__data">
+                  <input type="text" id="sname" name="sname" class="field__input" placeholder="Отчество">
+                </div>
               </div>
             </fieldset>
             <fieldset class="fieldset">
               <legend class="legend">Контактная информация</legend>
-              <label for="phone" class="form__label">Контактный телефон*:</label>
-              <div class="form__data form__data--action form__data--phone">
-                <input type="text" id="phone" name="phone" placeholder="Введите телефон" class="form__input">
+              <div class="field">
+                <label for="phone" class="field__label">Контактный телефон*:</label>
+                <div class="field__data field__data--action field__data--phone">
+                  <input type="text" id="phone" name="phone" placeholder="Введите телефон" class="field__input">
+                </div>
               </div>
-              <label for="phone" class="form__label">"Электронная почта*:</label>
-              <div class="form__data form__data--action form__data--mail">
-                <input type="text" id="phone" name="phone" placeholder="Введите e-mail" class="form__input">
+              <div class="field">
+                <label for="phone" class="field__label">Электронная почта*:</label>
+                <div class="field__data field__data--action field__data--mail">
+                  <input type="text" id="phone" name="phone" placeholder="Введите e-mail" class="field__input">
+                </div>
               </div>
             </fieldset>
             <fieldset class="fieldset">
               <legend class="legend">Ваше общее впечатление</legend>
-              <div class="review review--inline">
-                <input type="radio" id="plus" class="review__origin">
+              <label class="review review--inline">
+                <input type="radio" id="plus" class="review__origin" name="group">
                 <span class="review__psevdo"></span>
-                <label for="plus" class="review__label">Скорее положительное</label>
-              </div>
-              <div class="review review--inline">
-                <input type="radio" id="plus" class="review__origin">
+                <span for="plus" class="review__label">Скорее положительное</span>
+              </label>
+              <label class="review review--inline">
+                <input type="radio" id="plus-1" class="review__origin" name="group">
                 <span class="review__psevdo"></span>
-                <label for="plus" class="review__label">Скорее отрицательное</label>
-              </div>
-              <div class="review review--inline">
-                <input type="radio" id="plus" class="review__origin">
+                <spanfor="plus-1" class="review__label">Скорее отрицательное</span>
+              </label>
+              <label class="review review--inline">
+                <input type="radio" id="plus-2" class="review__origin" name="group">
                 <span class="review__psevdo"></span>
-                <label for="plus" class="review__label">Затрудняюсь ответить</label>
-              </div>
+                <span for="plus-2" class="review__label">Затрудняюсь ответить</span>
+              </label>
             </fieldset>
             <fieldset class="fieldset">
               <legend class="legend">Посещенные достопримечательности:</legend>
-              <div class="attraction">
+              <label class="attraction">
                 <input type="checkbox" class="attraction__origin" id="bridge">
                 <span class="attraction__psevdo"></span>
-                <label for="bridge" class="attraction__label">Мост дьявола</label>
-              </div>
-              <div class="attraction">
+                <span for="bridge" class="attraction__label">Мост дьявола</span>
+              </label>
+              <label class="attraction">
                 <input type="checkbox" class="attraction__origin" id="mountin">
                 <span class="attraction__psevdo"></span>
-                <label for="mountin" class="attraction__label">Гора-колокол</label>
-              </div>
-              <div class="attraction">
+                <span for="mountin" class="attraction__label">Гора-колокол</span>
+              </label>
+              <label class="attraction">
                 <input type="checkbox" class="attraction__origin" id="park">
                 <span class="attraction__psevdo"></span>
-                <label for="park" class="attraction__label">Слайд-парк</label>
-              </div>
-              <div class="attraction">
+                <span for="park" class="attraction__label">Слайд-парк</span>
+              </label>
+              <label class="attraction">
                 <input type="checkbox" class="attraction__origin" id="rock">
                 <span class="attraction__psevdo"></span>
-                <label for="rock" class="attraction__label">Красные скалы</label>
-              </div>
+                <span for="rock" class="attraction__label">Красные скалы</span>
+              </label>
             </fieldset>
             <fieldset class="fieldset">
               <legend class="legend">Опишите свои эмоции</legend>
-              <textarea name="emotions" id="emotions" cols="30" rows="10" class="form__textarea">Опишите подробно все свои восторги</textarea>
+              <textarea name="about" id="about" class="field__input field__input--area" placeholder="Опишите подробно все свои восторги"></textarea>
             </fieldset>
           </div>
-          <div class="search">
+          <div class="send__review">
             <button class="btn btn--brand btn--small" type="submit">Отправить отзыв</button>
-            <p class="search__inner-descr">* — обязательные поля</p>
+            <p class="send__descr">* — обязательные поля</p>
           </div>
         </form>
         @@include('blocks/footer.html')
