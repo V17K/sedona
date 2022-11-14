@@ -98,11 +98,12 @@
 
 .adv__about-item {
     display: flex;
-    padding-bottom: 25px;
+    padding-bottom: 26px;
     position: relative;
     @include media($tablet) {
         display: block;
         text-align: center;
+        padding-bottom: 60px;
 
     }
 }
@@ -140,8 +141,11 @@
 .adv__etc {
     position: relative;
     text-align: center;
-    padding: 26px 26px 24px;
+    padding: 24px;
     background-color: #eee;
+    @include media($tablet) {
+        padding-bottom: 60px;
+    }
 }
 
 .adv__etc:not(:last-child)::before {

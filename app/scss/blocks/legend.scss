@@ -4,4 +4,23 @@
     text-transform: uppercase;
     color: #000;
     padding-bottom: 20px;
+    @include media($tablet){
+        @include font(21px, 26px, 700, $basic-family);
+        margin-bottom: 28px;
+    }
+}
+
+.legend--choice{
+    @include media($tablet){
+        padding: 0 60px;
+        max-width: 400px;
+    }
+}
+
+.legend--feedback{
+    @include media($tablet){
+        padding: 0 60px;
+        
+    }
+    
 }

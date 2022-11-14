@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="css/main.css?t=1667073798385">
+  <link rel="stylesheet" href="css/main.css?t=1668458733436">
   <svg xmlns="http://www.w3.org/2000/svg" display="none">
     <symbol id="yt" viewBox="0 0 24 24">
       <path
@@ -70,7 +70,7 @@
         </div>
         <form action="#" class="form">
           <div class="form__field">
-            <fieldset class="fieldset">
+            <fieldset class="fieldset fieldset--contact">
               <legend class="legend">Представьтесь</legend>
               <div class="field">
                 <label for="fname" class="field__label">Имя*:</label>
@@ -91,7 +91,7 @@
                 </div>
               </div>
             </fieldset>
-            <fieldset class="fieldset">
+            <fieldset class="fieldset fieldset--contact">
               <legend class="legend">Контактная информация</legend>
               <div class="field">
                 <label for="phone" class="field__label">Контактный телефон*:</label>
@@ -106,8 +106,8 @@
                 </div>
               </div>
             </fieldset>
-            <fieldset class="fieldset">
-              <legend class="legend">Ваше общее впечатление</legend>
+            <fieldset class="fieldset fieldset--choice">
+              <legend class="legend legend--choice">Ваше общее впечатление</legend>
               <label class="review review--inline">
                 <input type="radio" id="plus" class="review__origin" name="group">
                 <span class="review__psevdo"></span>
@@ -124,8 +124,8 @@
                 <span for="plus-2" class="review__label">Затрудняюсь ответить</span>
               </label>
             </fieldset>
-            <fieldset class="fieldset">
-              <legend class="legend">Посещенные достопримечательности:</legend>
+            <fieldset class="fieldset fieldset--choice">
+              <legend class="legend legend--choice">Посещенные достопримечательности:</legend>
               <label class="attraction">
                 <input type="checkbox" class="attraction__origin" id="bridge">
                 <span class="attraction__psevdo"></span>
@@ -147,13 +147,14 @@
                 <span for="rock" class="attraction__label">Красные скалы</span>
               </label>
             </fieldset>
-            <fieldset class="fieldset">
-              <legend class="legend">Опишите свои эмоции</legend>
-              <textarea name="about" id="about" class="field__input field__input--area" placeholder="Опишите подробно все свои восторги"></textarea>
+            <fieldset class="fieldset fieldset--feedback">
+              <legend class="legend legend--feedback">Опишите свои эмоции</legend>
+              <textarea name="about" id="about" class="field__input field__input--area"
+                placeholder="Опишите подробно все свои восторги"></textarea>
             </fieldset>
           </div>
           <div class="send__review">
-            <button class="btn btn--brand btn--small" type="submit">Отправить отзыв</button>
+            <button class="btn btn--brand btn--small btn--wide-mobile" type="submit">Отправить отзыв</button>
             <p class="send__descr">* — обязательные поля</p>
           </div>
         </form>
@@ -191,8 +192,25 @@
     </a>
 </footer>
       </section>
+      <div class="windows windows--error">
+        <div class="content content--windows">
+          <h3 class="content__title">Что-то пошло не так!</h3>
+          <p class="content__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        </div>
+        <button class="btn btn--brand btn--xsmall" type="submit">Ок</button>
+      </div>
+      <div class="windows windows--send">
+        <div class="content content--windows">
+          <h3 class="content__title">Ваш отзыв отправлен!</h3>
+          <p class="content__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        </div>
+        <div class="windows__btn">
+          <button class="btn btn--brand btn--xsmall" type="submit">Закрыть окно</button>
+        </div>
+      </div>
     </main>
   </div>
+  <div class="overlay _active"></div>
 </body>
 <script>
   const nav = document.querySelector(".nav");

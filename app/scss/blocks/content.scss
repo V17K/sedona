@@ -22,11 +22,18 @@
     @include font(14px, 21px, 400, $basic-family);
     @include media($tablet) {
         max-width: 485px;
-        margin: 0 auto;
+        margin: 0 auto 55px;
         }
 }
 
 .content--form{
     margin-bottom: 28px;
+    @include media($tablet) {
+        margin-bottom: 102px;
+    }
+}
+
+.content--windows{
+    padding: 45px 42px 28px;
 }
 

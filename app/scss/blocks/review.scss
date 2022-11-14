@@ -1,0 +1,65 @@
+.review {
+    display: block;
+    padding-bottom: 16px;
+}
+
+.review__label,
+.attraction__label {
+    @include font(18px, 26px, 700, $basic-family);
+    padding-left: 16px;
+}
+
+.review__label{
+    padding-right: 33px;
+}
+
+
+.review__origin {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.review__psevdo {
+    display: block;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: #F2F2F2;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.review__psevdo:after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #000;
+    left: 15px;
+    top: 15px;
+    opacity: 0;
+    transform: scale(0);
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.review__origin:checked ~ .review__psevdo:after {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.review--inline {
+    display: flex;
+    align-items: center;
+    @include media($tablet){
+        padding-left: 16px;
+    }
+}

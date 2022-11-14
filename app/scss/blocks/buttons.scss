@@ -37,122 +37,30 @@
 
 .btn--small {
     padding: 16px 34px;
-    width: 100%;
     @include media($tablet){
         padding: 16px 55px;
     }
 }
-
 
 .btn:disabled {
     pointer-events: none;
     opacity: .5;
 }
 
+.btn--wide-mobile{
+    width: 100%;
+    @include media($tablet){
+        width: auto;
+    }
+}
 
-.review {
+.btn--xsmall{
+    padding: 18px 64px;
     display: block;
-    padding-bottom: 16px;
+    margin: 0 auto 35px;
+    @include media($tablet){
+        padding: 18px 60px;
+        margin: 0 auto;
+    }
 }
 
-.review__label,
-.attraction__label {
-    @include font(18px, 26px, 700, $basic-family);
-    padding-left: 16px;
-}
-
-.review__origin {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-
-.review__psevdo {
-    display: block;
-    width: 46px;
-    height: 46px;
-    border-radius: 50%;
-    background-color: #F2F2F2;
-    position: relative;
-    flex-shrink: 0;
-}
-
-.review__psevdo:after {
-    content: "";
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background-color: #000;
-    left: 15px;
-    top: 15px;
-    opacity: 0;
-    transform: scale(0);
-    transition: transform 0.2s ease, opacity 0.2s ease;
-}
-
-.review__origin:checked ~ .review__psevdo:after {
-    transform: scale(1);
-    opacity: 1;
-}
-
-.review--inline {
-    display: flex;
-    align-items: center;
-}
-
-.attraction{
-    display: flex;
-    align-items: center;
-    padding-bottom: 16px;
-}
-
-.attraction__psevdo {
-    display: block;
-    width: 46px;
-    height: 46px;
-    border-radius: 4px;
-    position: relative;
-    flex-shrink: 0;
-    background-color: #f2f2f2;
-    position: relative;
-    
-}
-
-.attraction__psevdo:after {
-    content: "";
-    position: absolute;
-    inset: 6px;
-    border-radius: 50%;
-    background-color: #000;
-    transform: scale(0);
-    opacity: 0;
-    transition: transform 0.2s ease, opacity 0.2s ease;
-    background: url(../img/tick.svg) no-repeat center center;
-}
-
-
-.attraction__origin:checked ~ .attraction__psevdo:after {
-    transform: scale(1);
-    opacity: 1;
-}
-
-.attraction__origin {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}

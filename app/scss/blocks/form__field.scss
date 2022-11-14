@@ -1,0 +1,14 @@
+.form{
+    @include media($tablet) {
+    margin: 0 60px;
+}
+}
+
+
+.form__field {
+    position: relative;
+    @include media($tablet) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

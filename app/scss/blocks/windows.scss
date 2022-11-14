@@ -1,0 +1,23 @@
+.windows{
+    position: fixed;
+    right: 0;
+    left: 0;
+    top:50%;
+    background-color: #fff;
+    z-index: 11;
+
+}
+
+.windows__btn{
+    background-color: #F2F2F2;
+    padding: 20px;
+
+}
+
+.windows--error{
+    display: none;
+}
+
+.windows--send{
+   
+}

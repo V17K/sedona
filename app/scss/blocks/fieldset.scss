@@ -3,34 +3,42 @@
     margin: 0 0 30px;
     position: relative;
     padding: 0 20px;
+    @include media($tablet){
+        border-top: none;
+    }
 }
 
-.fieldset:not(:last-child):before {
+.fieldset--contact{
+    @include media($tablet){
+}
+}
+
+.fieldset--contact::after{
+    @include media($tablet){
     content: "";
-    border-bottom: 1px solid #e5e5e5;
     position: absolute;
+    border-right: 1px solid #DBDBDB;
+    top: -50px;
+    right: 0;
     bottom: 0;
-    left: 0;
-    right: 0;
+    }
 }
 
-
-.form__field {
-    position: relative;
+.fieldset--choice{
+    @include media($tablet){
+        grid-column: 1/-1;
+        border-top: 1px solid #DBDBDB;
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
-.form__field::after {
-    content: "";
-    border-bottom: 1px solid #e5e5e5;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+.fieldset--feedback{
+    @include media($tablet){
+        grid-column: 1/-1;
+        height: 160px;
+        margin-bottom: 48px;
+        border-top: 1px solid #DBDBDB;
+        padding: 0;
+    }
 }
-
-
-.form__field{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-

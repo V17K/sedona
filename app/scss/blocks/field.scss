@@ -2,7 +2,9 @@
     padding-bottom: 16px;
 }
 .field:last-child{
-    padding-bottom: 39px;
+    @include media($tablet){
+        padding-bottom: 15px;
+    }
 }
 
 .field__data {
