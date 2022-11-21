@@ -1,6 +1,15 @@
+.reviews {
+    @include media($tablet) {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
+
 .review {
     display: block;
     padding-bottom: 16px;
+    margin: 0 auto;
+    flex-shrink: 0;
 }
 
 .review__label,
@@ -9,7 +18,7 @@
     padding-left: 16px;
 }
 
-.review__label{
+.review__label {
     padding-right: 33px;
 }
 
@@ -59,7 +68,4 @@
 .review--inline {
     display: flex;
     align-items: center;
-    @include media($tablet){
-        padding-left: 16px;
-    }
 }

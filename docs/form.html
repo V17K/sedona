@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="css/main.css?t=1668458733436">
+  <link rel="stylesheet" href="css/main.css?t=1669059003514">
   <svg xmlns="http://www.w3.org/2000/svg" display="none">
     <symbol id="yt" viewBox="0 0 24 24">
       <path
@@ -43,7 +43,7 @@
                 <a href="index.html" class="nav__link nav__link--current">Главная</a>
             </li>
             <li class="nav__item">
-                <a href="#" class="nav__link">Фото и видео</a>
+                <a href="catalog.html" class="nav__link">Фото и видео</a>
             </li>
             <li class="nav__item">
                 <a href="form.html" class="nav__link">Форма отзыва</a>
@@ -108,44 +108,49 @@
             </fieldset>
             <fieldset class="fieldset fieldset--choice">
               <legend class="legend legend--choice">Ваше общее впечатление</legend>
-              <label class="review review--inline">
-                <input type="radio" id="plus" class="review__origin" name="group">
-                <span class="review__psevdo"></span>
-                <span for="plus" class="review__label">Скорее положительное</span>
-              </label>
-              <label class="review review--inline">
-                <input type="radio" id="plus-1" class="review__origin" name="group">
-                <span class="review__psevdo"></span>
-                <spanfor="plus-1" class="review__label">Скорее отрицательное</span>
-              </label>
-              <label class="review review--inline">
-                <input type="radio" id="plus-2" class="review__origin" name="group">
-                <span class="review__psevdo"></span>
-                <span for="plus-2" class="review__label">Затрудняюсь ответить</span>
-              </label>
+              <div class="reviews">
+                <label class="review review--inline">
+                  <input type="radio" id="plus" class="review__origin" name="group">
+                  <span class="review__psevdo"></span>
+                  <span for="plus" class="review__label">Скорее положительное</span>
+                </label>
+                <label class="review review--inline">
+                  <input type="radio" id="plus-1" class="review__origin" name="group">
+                  <span class="review__psevdo"></span>
+                  <spanfor="plus-1" class="review__label">Скорее отрицательное</span>
+                </label>
+                <label class="review review--inline">
+                  <input type="radio" id="plus-2" class="review__origin" name="group">
+                  <span class="review__psevdo"></span>
+                  <span for="plus-2" class="review__label">Затрудняюсь ответить</span>
+                </label>
+              </div>
+              
             </fieldset>
             <fieldset class="fieldset fieldset--choice">
               <legend class="legend legend--choice">Посещенные достопримечательности:</legend>
-              <label class="attraction">
-                <input type="checkbox" class="attraction__origin" id="bridge">
-                <span class="attraction__psevdo"></span>
-                <span for="bridge" class="attraction__label">Мост дьявола</span>
-              </label>
-              <label class="attraction">
-                <input type="checkbox" class="attraction__origin" id="mountin">
-                <span class="attraction__psevdo"></span>
-                <span for="mountin" class="attraction__label">Гора-колокол</span>
-              </label>
-              <label class="attraction">
-                <input type="checkbox" class="attraction__origin" id="park">
-                <span class="attraction__psevdo"></span>
-                <span for="park" class="attraction__label">Слайд-парк</span>
-              </label>
-              <label class="attraction">
-                <input type="checkbox" class="attraction__origin" id="rock">
-                <span class="attraction__psevdo"></span>
-                <span for="rock" class="attraction__label">Красные скалы</span>
-              </label>
+              <div class="attractions">
+                <label class="attraction">
+                  <input type="checkbox" class="attraction__origin" id="bridge">
+                  <span class="attraction__psevdo"></span>
+                  <span for="bridge" class="attraction__label">Мост дьявола</span>
+                </label>
+                <label class="attraction">
+                  <input type="checkbox" class="attraction__origin" id="mountin">
+                  <span class="attraction__psevdo"></span>
+                  <span for="mountin" class="attraction__label">Гора-колокол</span>
+                </label>
+                <label class="attraction">
+                  <input type="checkbox" class="attraction__origin" id="park">
+                  <span class="attraction__psevdo"></span>
+                  <span for="park" class="attraction__label">Слайд-парк</span>
+                </label>
+                <label class="attraction">
+                  <input type="checkbox" class="attraction__origin" id="rock">
+                  <span class="attraction__psevdo"></span>
+                  <span for="rock" class="attraction__label">Красные скалы</span>
+                </label>
+              </div>
             </fieldset>
             <fieldset class="fieldset fieldset--feedback">
               <legend class="legend legend--feedback">Опишите свои эмоции</legend>
@@ -192,20 +197,26 @@
     </a>
 </footer>
       </section>
-      <div class="windows windows--error">
-        <div class="content content--windows">
-          <h3 class="content__title">Что-то пошло не так!</h3>
-          <p class="content__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <div class="modal modal--small">
+        <div class="modal__wrap">
+          <div class="modal__content">
+            <h3 class="modal__content-title">Что-то пошло не так!</h3>
+            <p class="modal__content-descr">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          </div>
+          <div class="modal__btn">
+            <button class="btn btn--brand btn--xsmall" type="submit">Закрыть окно</button>
+          </div>
         </div>
-        <button class="btn btn--brand btn--xsmall" type="submit">Ок</button>
       </div>
-      <div class="windows windows--send">
-        <div class="content content--windows">
-          <h3 class="content__title">Ваш отзыв отправлен!</h3>
-          <p class="content__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-        </div>
-        <div class="windows__btn">
-          <button class="btn btn--brand btn--xsmall" type="submit">Закрыть окно</button>
+      <div class="modal modal--medium">
+        <div class="modal__wrap">
+          <div class="modal__content">
+            <h3 class="modal__content-title">Ваш отзыв отправлен!</h3>
+            <p class="modal__content-descr">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+          </div>
+          <div class="modal__btn">
+            <button class="btn btn--brand btn--xsmall" type="submit">Закрыть окно</button>
+          </div>
         </div>
       </div>
     </main>

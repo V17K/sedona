@@ -49,6 +49,11 @@
     position: relative;
 }
 
+.field__input:hover{
+    background-color: #E5E5E5;
+    border-color: #E5E5E5;
+}
+
 .field__input:focus {
     border-color: #e5e5e5;
     background-color: #fff;
@@ -57,11 +62,6 @@
 .field__input::placeholder {
     color: rgba(0, 0, 0, 0.3);
     opacity: 1;
-}
-
-.field__input:hover{
-    background-color: #E5E5E5;
-    border: 4px solid #E5E5E5;
 }
 
 .field__label {

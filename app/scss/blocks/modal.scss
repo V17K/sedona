@@ -1,0 +1,41 @@
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 11;
+    display: none;
+}
+
+.modal__btn{
+    background-color: #F2F2F2;
+    padding: 20px;
+}
+
+.modal__content-title{
+    @include font(21px, 26px, 700, $basic-family);
+    text-align: center;
+    text-transform: uppercase;
+    @include media($tablet) {
+        @include font(30px, 40px, 700, $basic-family);
+}
+}
+
+.modal__content-descr{
+    @include font(14px, 21px, 400, $basic-family);
+    text-transform: uppercase;
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.modal--small{
+    width: 320px;
+    height: 320px;
+}
+
+.modal-medium{
+    width: 640px;
+    height: 350px;
+}

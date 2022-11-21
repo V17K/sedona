@@ -3,38 +3,40 @@
     margin: 0 0 30px;
     position: relative;
     padding: 0 20px;
-    @include media($tablet){
+    @include media($tablet) {
         border-top: none;
+        
+        margin-bottom: 48px;
     }
 }
 
-.fieldset--contact{
-    @include media($tablet){
-}
-}
-
-.fieldset--contact::after{
-    @include media($tablet){
-    content: "";
-    position: absolute;
-    border-right: 1px solid #DBDBDB;
-    top: -50px;
-    right: 0;
-    bottom: 0;
+.fieldset--contact:first-child {
+    @include media($tablet) {
+        padding-right: 43px;
+        margin-right: 23px;
     }
 }
 
-.fieldset--choice{
-    @include media($tablet){
+.fieldset--contact:first-child::after {
+    @include media($tablet) {
+        content: "";
+        position: absolute;
+        border-right: 1px solid #DBDBDB;
+        top: -50px;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+.fieldset--choice {
+    @include media($tablet) {
         grid-column: 1/-1;
         border-top: 1px solid #DBDBDB;
-        display: flex;
-        flex-wrap: wrap;
     }
 }
 
-.fieldset--feedback{
-    @include media($tablet){
+.fieldset--feedback {
+    @include media($tablet) {
         grid-column: 1/-1;
         height: 160px;
         margin-bottom: 48px;

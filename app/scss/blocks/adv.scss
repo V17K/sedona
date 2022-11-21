@@ -55,10 +55,16 @@
     text-align: center;
     padding: 60px 20px 40px;
     background-color: #81B3D2;
+    @include media($tablet) {
+        padding: 40px 32px;
+    }
 }
 
 .adv__title--bridge {
     padding-top: 39px;
+    @include media($tablet) {
+            padding: 40px 32px;
+    }
 }
 
 .adv__number {
@@ -74,6 +80,8 @@
     text-transform: uppercase;
     color: #fff;
     margin: 0;
+    max-width: 290px;
+    margin: 0 auto;
 }
 
 .adv__photo {
