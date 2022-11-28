@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/main.css?t=1669059669851">
+    <link rel="stylesheet" href="css/main.css?t=1669661470885">
     <svg xmlns="http://www.w3.org/2000/svg" display="none">
         <symbol id="yt" viewBox="0 0 24 24">
             <path
@@ -61,91 +61,125 @@
     </button>
 </div>
 
-        <div class="header__content header__content--form">
+        <div class="header__content header__content--gallery">
             <img src="img/header-form.svg" alt="Заголовок" class="header__pic header__pic--form" width="230"
                 height="40">
         </div>
         <main class="main">
             <section class="main__content">
-                <div class="content">
-                    <h3 class="content__title">Фото и видео</h3>
+                <div class="content content__small">
+                    <h3 class="content__title content__title--small">Фото и видео</h3>
                     <p class="content__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
                 </div>
                 <div class="gallery">
                     <ul class="gallery__list">
-                        <li class="gallery__item">
-                            <img src="img/road.jpg" alt="Картинка дороги" class="gallery-pic" width="1200px" height="400px">
-                            <div class="gallery__content">
-                                <div class="gallery__heading">
-                                    <h3 class="gallery__title">Неродные просторы</h3>
-                                    <p class="gallery__descr">Автор фото: Борис</p>
+                        <a href="#" class="gallery__link">
+                            <li class="gallery__item">
+                                <picture>
+                                    <source srcset="img/road.avif, img/road-2x.avif 2x" type="image/avif" media="(min-width: 768px)">
+                                    <source srcset="img/road.webp, img/road-2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+                                    <source srcset="img/road.jpg, img/road-2x.jpg 2x" type="image/webp" media="(min-width: 768px)">
+                                    <source srcset="img/road-mobile.avif, img/road-mobile-2x.avif 2x" type="image/avif">
+                                    <source srcset="img/road-mobile-2x.webp, img/road-mobile-2x.webp 2x" type="image/webp">
+                                    <img srcset="img/road-mobile-2x.jpg 2x" src="img/road-mobile.jpg" alt="Дорога на закате" class="gallery-pic" width="1200" height="400">
+                                </picture>
+                                <div class="gallery__content">
+                                    <div class="gallery__heading">
+                                        <h3 class="gallery__title">Неродные просторы</h3>
+                                        <p class="gallery__descr">Автор фото: Борис</p>
+                                    </div>
+                                    <div class="gallery__like">
+                                            <svg class="like__icon">
+                                                <use href="#hand"/>
+                                            </svg>
+                                        <p class="like__descr">1350</p>
+                                    </div>
                                 </div>
-                                <div class="gallery__grade">
-                                    <a href="#">
-                                        <svg class="grade__pic">
-                                            <use href="#hand"/>
-                                        </svg>
-                                    </a>
-                                    <p class="grade__descr">1350</p>
+                            </li>
+                        </a>
+                        <a href="" class="gallery__link">
+                            <li class="gallery__item">
+                                <picture>
+                                    <source srcset="img/cactus.avif, img/cactus-2x.avif 2x" type="image/avif" media="(min-width: 768px)">
+                                    <source srcset="img/cactus.webp, img/cactus-2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+                                    <source srcset="img/cactus.jpg, img/cactus-2x.jpg 2x" type="image/webp" media="(min-width: 768px)">
+                                    <source srcset="img/cactus-mobile.avif, img/cactus-mobile-2x.avif 2x" type="image/avif">
+                                    <source srcset="img/cactus-mobile-2x.webp, img/cactus-mobile-2x.webp 2x" type="image/webp">
+                                    <img srcset="img/cactus-mobile-2x.jpg 2x" src="img/cactus-mobile.jpg" alt="Кактус на фоне гор" class="gallery-pic" width="400" height="267">
+                                </picture>
+                                <div class="gallery__content">
+                                    <div class="gallery__heading">
+                                        <h3 class="gallery__title">Местная растительность</h3>
+                                        <p class="gallery__descr">Автор фото: Сергей</p>
+                                    </div>
+                                    <div class="gallery__like">
+                                        <a href="#">
+                                            <svg class="like__icon">
+                                                <use href="#hand"/>
+                                            </svg>
+                                        </a>
+                                        <p class="like__descr">143</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="gallery__item">
-                            <img src="img/cactus.jpg" alt="Картинка кактуса" class="gallery-pic" width="400px" height="267px">
-                            <div class="gallery__content">
-                                <div class="gallery__heading">
-                                    <h3 class="gallery__title">Местная растительность</h3>
-                                    <p class="gallery__descr">Автор фото: Сергей</p>
+                            </li>
+                        </a>
+                        <a href="" class="gallery__link">
+                            <li class="gallery__item">
+                                <picture>
+                                    <source srcset="img/forest.avif, img/forest-2x.avif 2x" type="image/avif" media="(min-width: 768px)">
+                                    <source srcset="img/forest.webp, img/forest-2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+                                    <source srcset="img/forest.jpg, img/forest-2x.jpg 2x" type="image/webp" media="(min-width: 768px)">
+                                    <source srcset="img/forest-mobile.avif, img/forest-mobile-2x.avif 2x" type="image/avif">
+                                    <source srcset="img/forest-mobile-2x.webp, img/forest-mobile-2x.webp 2x" type="image/webp">
+                                    <img srcset="img/forest-mobile-2x.jpg 2x" src="img/forest-mobile.jpg" alt="Дорога серпантин в лесу" class="gallery-pic" width="400" height="267">
+                                </picture>
+                                <div class="gallery__content gallery--secondary">
+                                    <div class="gallery__heading">
+                                        <h3 class="gallery__title">Дорога на север</h3>
+                                        <p class="gallery__descr">Автор фото: Петр</p>
+                                    </div>
+                                    <div class="gallery__like">
+                                        <a href="#">
+                                            <svg class="like__icon">
+                                                <use href="#hand"/>
+                                            </svg>
+                                        </a>
+                                        <p class="like__descr">96</p>
+                                    </div>
                                 </div>
-                                <div class="gallery__grade">
-                                    <a href="#">
-                                        <svg class="grade__pic">
-                                            <use href="#hand"/>
-                                        </svg>
-                                    </a>
-                                    <p class="grade__descr">143</p>
+                            </li>
+                        </a>
+                        <a href="" class="gallery__link">
+                            <li class="gallery__item gallery__item--bridge">
+                                <picture>
+                                    <source srcset="img/cave.avif, img/cave-2x.avif 2x" type="image/avif" media="(min-width: 768px)">
+                                    <source srcset="img/cave.webp, img/forest-2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+                                    <source srcset="img/cave.jpg, img/forest-2x.jpg 2x" type="image/webp" media="(min-width: 768px)">
+                                    <source srcset="img/cave.avif, img/cave-2x.avif 2x" type="image/avif">
+                                    <source srcset="img/cave-2x.webp, img/cave-2x.webp 2x" type="image/webp">
+                                    <img srcset="img/cave-mobile-2x.jpg 2x" src="img/cave-mobile.jpg" alt="Каньон" class="gallery-pic" width="400" height="267">
+                                </picture>
+                                <div class="gallery__content">
+                                    <div class="gallery__heading">
+                                        <h3 class="gallery__title">Мост дьявола</h3>
+                                        <p class="gallery__descr">Автор фото: Антон</p>
+                                    </div>
+                                    <div class="gallery__like">
+                                        <a href="#">
+                                            <svg class="like__icon">
+                                                <use href="#hand"/>
+                                            </svg>
+                                        </a>
+                                        <p class="like__descr">254</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="gallery__item">
-                            <img src="img/road-to-north.jpg" alt="Картинка дороги" class="gallery-pic"  width="400px" height="267px">
-                            <div class="gallery__content gallery--secondary">
-                                <div class="gallery__heading">
-                                    <h3 class="gallery__title">Дорога на север</h3>
-                                    <p class="gallery__descr">Автор фото: Петр</p>
-                                </div>
-                                <div class="gallery__grade">
-                                    <a href="#">
-                                        <svg class="grade__pic">
-                                            <use href="#hand"/>
-                                        </svg>
-                                    </a>
-                                    <p class="grade__descr">96</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="gallery__item gallery__item--bridge">
-                            <img src="img/bridge.jpg" alt="Картинка моста" class="gallery-pic" width="400px" height="267px">
-                            <div class="gallery__content">
-                                <div class="gallery__heading">
-                                    <h3 class="gallery__title">Мост дьявола</h3>
-                                    <p class="gallery__descr">Автор фото: Антон</p>
-                                </div>
-                                <div class="gallery__grade">
-                                    <a href="#">
-                                        <svg class="grade__pic">
-                                            <use href="#hand"/>
-                                        </svg>
-                                    </a>
-                                    <p class="grade__descr">254</p>
-                                </div>
-                            </div>
-                        </li>
+                            </li>
+                        </a>
                     </ul>
                 </div>
                 <div class="presentation">
-                    <div class="content">
-                        <h3 class="content__title">Все еще сомневаетесь?</h3>
+                    <div class="content content__small">
+                        <h3 class="content__title content__title--small">Все еще сомневаетесь?</h3>
                         <p class="content__description"> Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
                     </div>
                     <div class="presentation__clip">

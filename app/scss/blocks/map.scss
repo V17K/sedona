@@ -3,9 +3,9 @@
     height: 350px;
     display: block;
     object-fit: cover;
-    padding-bottom: 40px;
+    margin-bottom: 39px;
     @include media($tablet) {
         padding-bottom: 0;
-        margin-bottom: 35px;
+        margin-bottom: 36px;
     }
 }

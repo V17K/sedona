@@ -1,18 +1,36 @@
 .content {
     text-align: center;
     max-width: 270px;
-    margin: 0 auto;
+    margin: 0 auto 20px;
     @include media($tablet) {
-    max-width: 485px;
-    margin: 0 auto;
+        max-width: 485px;
+        margin: 0 auto 55px;
+        @include media($desktop) {
+            margin-bottom: 44px;
+        }
     }
 }
 
 .content__title {
     text-transform: uppercase;
-    padding-bottom: 25px;
+    padding-bottom: 35px;
     margin: 0;
     @include font(18px, 26px, 700, $basic-family);
+    @include media($tablet) {
+        padding-bottom: 38px;
+    }
+}
+
+.content__title--form {
+    padding-bottom: 24px;
+    @include media($tablet) {
+        padding-bottom: 20px;
+        @include font(30px, 26px, 700, $basic-family);
+    }
+    @include media($desktop) {
+        @include font(30px, 26px, 700, $basic-family);
+        padding-bottom: 37px;
+    }
 }
 
 .content__description {
@@ -22,18 +40,29 @@
     @include font(14px, 21px, 400, $basic-family);
     @include media($tablet) {
         max-width: 485px;
-        margin: 0 auto 55px;
-        }
+        margin: 0 auto;
+    }
 }
 
-.content--form{
+.content--form {
     margin-bottom: 28px;
     @include media($tablet) {
         margin-bottom: 102px;
     }
 }
 
-.content--windows{
-    padding: 45px 42px 28px;
+.content__small{
+    margin-bottom: 50px;
+    @include media($tablet){
+        margin-bottom: 62px;
+    }
+    @include media($tablet){
+        margin-bottom: 65px;
+    }
 }
 
+.content__title--small{
+    @include media($tablet) {
+        @include font(30px, 2px, 700, $basic-family);
+    }
+}

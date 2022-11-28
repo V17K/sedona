@@ -1,16 +1,29 @@
 .social{
     display: flex;
     justify-content: center;
-    padding: 0;
+    padding: 0 0 40px;
+    margin: 0;
+    @include media($tablet) {
+        padding-bottom: 0;
+    }
 }
 
 .social__item{
     list-style-type: none;
+    margin-left: 6px;
+    padding: 0;
+}
+
+.social__item:first-child{
+    margin-left: 0;
+}
+
+.social__link{
+    padding: 0;
 }
 
 .social__pic {
     padding: 12px;
-    margin-left: 6px;
     width: 24px;
     height: 24px;
     color: #fff;

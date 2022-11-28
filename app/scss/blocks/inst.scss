@@ -1,0 +1,12 @@
+.inst {
+    @include font(21px, 26px, 700, $basic-family);
+    display: block;
+    padding-bottom: 34px;
+    text-transform: uppercase;
+    color: #000;
+    margin: 0;
+    text-decoration: none;
+    @include media($tablet) {
+        padding-bottom: 0;
+    }
+}

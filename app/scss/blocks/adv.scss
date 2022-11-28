@@ -1,6 +1,6 @@
 .adv {
     list-style-type: none;
-    margin: 0 0 40px;
+    margin: 0 0 38px;
     padding: 0;
     @include media($tablet) {
         display: grid;
@@ -22,7 +22,6 @@
     @include media($tablet) {
         display: grid;
         grid-template-columns: 1fr 2fr;
-        margin-bottom: 60px;
     }
 }
 
@@ -48,7 +47,7 @@
     text-transform: uppercase;
     color: #fff;
     margin: 0;
-    padding-bottom: 20px;
+    padding-bottom: 11px;
 }
 
 .adv__title {
@@ -56,14 +55,13 @@
     padding: 60px 20px 40px;
     background-color: #81B3D2;
     @include media($tablet) {
-        padding: 40px 32px;
     }
 }
 
 .adv__title--bridge {
-    padding-top: 39px;
+    padding: 39px 16px 35px 15px;
     @include media($tablet) {
-            padding: 40px 32px;
+        padding: 42px  36px 41px;
     }
 }
 
@@ -93,27 +91,34 @@
 
 .adv__about {
     list-style: none;
-    padding: 23px 18px 27px;
+    padding: 0 18px;
+    margin-bottom: 52px;
     @include media($tablet) {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         padding: 0 35px;
-        margin: 0;
+        margin-bottom: 59px;
         list-style-type: none;
         gap: 32px;
+    }
+    @include media($desktop){
+        margin-bottom: 79px;
     }
 }
 
 .adv__about-item {
     display: flex;
-    padding-bottom: 26px;
+    padding-bottom: 22px;
     position: relative;
     @include media($tablet) {
         display: block;
         text-align: center;
-        padding-bottom: 60px;
-
+        padding-bottom: 0;
     }
+}
+
+.adv__about-item:last-child{
+    padding-bottom: 0;
 }
 
 .adv__about-pic {
@@ -125,7 +130,7 @@
 }
 
 .adv__about-title {
-    padding-left: 10px;
+    padding-left: 7px;
     @include media($tablet) {
         padding: 0;
     }
@@ -135,7 +140,7 @@
     @include font(18px, 26px, 700, $basic-family);
     text-transform: uppercase;
     margin: 0;
-    padding-bottom: 16px;
+    padding-bottom: 28px;
 }
 
 .adv__about-descr {
@@ -149,16 +154,15 @@
 .adv__etc {
     position: relative;
     text-align: center;
-    padding: 24px;
+    padding: 26px 26px 24px 26px;
     background-color: #eee;
     @include media($tablet) {
-        padding-bottom: 60px;
-    }
+        padding: 42px 0 63px 33px;
 }
 
-.adv__etc:not(:last-child)::before {
+.adv__etc:not(:last-child)::after {
     content: "";
-    border-bottom: 1px solid #D6D6D6;
+    border-bottom: 1px solid red;
     position: absolute;
     bottom: 0;
     left: 18px;
@@ -172,12 +176,14 @@
     @include font(18px, 26px, 700, $basic-family);
     color: #000;
     text-transform: uppercase;
+    margin: 0;
+    padding-bottom: 16px;
 }
 
 .adv__etc-number {
     @include font(14px, 21px, 400, $basic-family);
     color: #000;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
     display: block;
 }
 
@@ -196,4 +202,11 @@
 .adv__item--reverse {
     grid-template-columns: 2fr 1fr;
     margin-bottom: 0;
+}
+}
+
+.adv__item--forward{
+    @include media($tablet) {
+        margin-bottom: 60px;
+    }
 }

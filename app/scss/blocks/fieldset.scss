@@ -5,8 +5,10 @@
     padding: 0 20px;
     @include media($tablet) {
         border-top: none;
-        
         margin-bottom: 48px;
+    }
+    @include media($desktop) {
+        margin-bottom: 56px;
     }
 }
 
@@ -14,6 +16,10 @@
     @include media($tablet) {
         padding-right: 43px;
         margin-right: 23px;
+    }
+    @include media($desktop) {
+        padding-right: 63px;
+        margin-right: 43px;
     }
 }
 

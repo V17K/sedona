@@ -1,19 +1,39 @@
-.presentation{
-    margin: 17px 0 28px 0;
+.presentation {
+    margin-bottom: 29px;
     padding: 0 20px;
     @include media($tablet) {
-        margin: 58px 0 63px;
         padding: 0 60px;
+        margin-bottom: 40px;
+    }
+    @include media($desktop) {
+        margin-bottom: 120px;
+        padding: 0 200px;
     }
 }
 
-.clip-pic{
+.clip-pic {
     width: 100%;
-    height: 280px;
+    height: 100%;
     display: block;
     object-fit: cover;
     padding-top: 38px;
     @include media($tablet) {
         padding-top: 0;
     }
+}
+
+.presentation__clip{
+    position: relative;
+}
+
+.presentation__clip::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 27px solid transparent;
+    border-left: 48px solid rgba(255, 255, 255, 0.7);
+    border-bottom: 27px solid transparent;
+    top: 50%;
+    right: 50%;
 }

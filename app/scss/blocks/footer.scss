@@ -1,19 +1,20 @@
 .footer {
     text-align: center;
+    padding: 0;
     @include media($tablet) {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        padding-bottom: 35px;
+        padding-bottom: 36px;
+    }
+    @include media($desktop) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 36px;
+        margin: 0 60px;
     }
 }
 
-.inst {
-    @include font(21px, 26px, 700, $basic-family);
-    text-transform: uppercase;
-    color: #000;
-    margin: 0;
-    text-decoration: none;
-}
 
 

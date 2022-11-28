@@ -1,12 +1,24 @@
 .search {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 49px;
     width: 100%;
+    @include media($tablet) {
+        margin-bottom: 58px;
+    }
+    @include media($desktop){
+        margin-bottom: 66px;
+    }
 }
 
 .search__heading{
     max-width: 500px;
-    margin: 0 auto;
+    margin: 0 auto 32px;
+    @include media($tablet) {
+        margin-bottom: 40px;
+    }
+    @include media($desktop){
+        margin-bottom: 46px;
+    }
 }
 
 .search__title {
@@ -15,7 +27,11 @@
     text-transform: uppercase;
     padding-bottom: 30px;
     @include media($tablet) {
+        padding-bottom: 40px;
         @include font(30px, 26px, 700, $basic-family);
+    }
+    @include media($desktop){
+        padding-bottom: 39px;
     }
 }
 
@@ -24,7 +40,6 @@
     margin: 0 auto;
     @include font(14px, 21px, 400, $basic-family);
     text-transform: uppercase;
-    padding-bottom: 40px;
     @include media($tablet) {
         max-width: 440px;
         margin: 0 auto;

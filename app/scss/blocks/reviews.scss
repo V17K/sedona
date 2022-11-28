@@ -68,4 +68,10 @@
 .review--inline {
     display: flex;
     align-items: center;
+    @include media($tablet) {
+        max-width: 280px;
+        margin: 0 auto;
+        width: 300px;
+    }
 }
+

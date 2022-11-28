@@ -3,12 +3,7 @@
     "development"
   ],
   "hints": {
-    "axe/structure": [
-      "default",
-      {
-        "listitem": "off"
-      }
-    ],
+    "axe/structure": "off",
     "axe/name-role-value": [
       "default",
       {

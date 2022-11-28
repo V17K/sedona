@@ -20,29 +20,53 @@
 .header__content {
     background-color: #2a404a;
     background-image: url('../img/bg-content-header.jpg');
-    padding: 90px 19px 85px 19px;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     text-align: center;
-    margin-bottom: 36px;
+    margin-bottom: 32px;
+    @include media($tablet){
+        margin-bottom: 48px;
+    }
+
 }
 
 .header__content--form{
     background-color: #2a404a;
     background-image: url('../img/bg-header-form.jpg');
-    padding: 52px 46px 67px;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     text-align: center;
+    margin-bottom: 38px;
+    @include media($tablet){
+        margin-bottom: 115px;
+    }
+    @include media($desktop){
+        margin-bottom: 115px;
+    }
+}
+
+.header__content--gallery{
+    @include media($tablet){
+        margin-bottom: 62px;
+    }
+    @include media($desktop){
+        margin-bottom: 100px;
+    }
 }
 
 .header__pic{
+    padding: 90px 19px 85px 19px;
     @include media($tablet){
         width: 461px;
         height: 350px;
         padding: 77px 154px 91px 153px;
+    }
+    @include media($desktop){
+        width: 460px;
+        height: 350px;
+        padding: 78px 370px 90px;
     }
 }
 
@@ -50,7 +74,12 @@
     @include media($tablet){
         width: 460px;
         height: 80px;
-        padding: 95px 155px 117px 95px;
+        padding: 95px 155px 117px;
+    }
+    @include media($desktop){
+        width: 460px;
+        height: 80px;
+        padding: 101px 370px 120px 370px;
     }
 }
 
@@ -126,5 +155,7 @@
     transform: translateY(0) rotate(-45deg);
     background-color: #fff;
 }
+
+
 
 

@@ -1,17 +1,21 @@
-.gallery {}
-
 .gallery__list {
-    padding: 24px 20px;
-    margin: 30px 0 0;
-    border-top: 1px solid #E5E5E5;
-    border-bottom: 1px solid #E5E5E5;
+    padding: 0 20px;
     @include media($tablet) {
         display: flex;
         flex-wrap: wrap;
-        padding: 63px 60px 0;
         border: none;
-        margin: 0 ;
+        margin-bottom: 58px;
+        padding: 0 60px;
     }
+    @include media($desktop) {
+        padding: 0;
+        margin-bottom: 62px;
+    }
+}
+
+.gallery__link {
+    text-decoration: none;
+    color: #000000;
 }
 
 .gallery__item {
@@ -19,6 +23,9 @@
     margin-bottom: 30px;
     @include media($tablet) {
         margin-bottom: 0;
+    }
+    @include media($desktop) {
+        position: relative;
     }
 }
 
@@ -36,6 +43,9 @@
     @include media($tablet) {
         padding-bottom: 0;
     }
+    @include media($desktop) {
+        height: 100%;
+    }
 }
 
 .gallery__content {
@@ -45,45 +55,68 @@
         background-color: #f2f2f2;
         padding: 22px 20px 15px;
     }
+    @include media($desktop) {
+        background-color: rgba(0, 0, 0, 0.3);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
 
 }
-
-.gallery__heading {}
 
 .gallery__title {
     @include font(14px, 21px, 700, $basic-family);
     text-transform: uppercase;
     padding: 0;
     margin: 0;
+    @include media($desktop) {
+        color: #ffffff;
+    }
 }
 
 .gallery__descr {
     @include font(14px, 21px, 400, $basic-family);
     padding: 0;
     margin: 0;
+    color: #333333;
+    @include media($desktop) {
+        color: #ffffff;
+    }
 }
 
-.gallery__grade {
+.gallery__like {
     display: flex;
     align-items: center;
 }
 
-.grade__pic {
+.like__icon {
     width: 23px;
     height: 21px;
     color: #000000;
+    @include media($desktop) {
+        color: #ffffff;
+    }
+
+    
 }
 
 
-.grade__descr {
+.like__descr {
     @include font(14px, 21px, 700, $basic-family);
     padding-left: 14px;
+    @include media($desktop) {
+        color: #ffffff;
+    }
 }
 
 
-.gallery--secondary{
+.gallery--secondary {
     @include media($tablet) {
         background-color: #EAEAEA;
     }
-    
+    @include media($desktop) {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
 }
