@@ -1,7 +1,7 @@
 .header__wrap {
     display: flex;
     justify-content: flex-end;
-    padding: 17px 20px;
+    padding: 12px 16px;
     position: relative;
     @include media($tablet){
         display: block;
@@ -24,9 +24,12 @@
     background-size: cover;
     position: relative;
     text-align: center;
-    margin-bottom: 32px;
+    margin-bottom: 29px;
     @include media($tablet){
-        margin-bottom: 48px;
+        margin-bottom: 46px;
+    }
+    @include media($desktop){
+        margin-bottom: 56px;
     }
 
 }
@@ -38,18 +41,19 @@
     background-size: cover;
     position: relative;
     text-align: center;
-    margin-bottom: 38px;
+    margin-bottom: 44px;
     @include media($tablet){
-        margin-bottom: 115px;
+        margin-bottom: 60px;
     }
     @include media($desktop){
-        margin-bottom: 115px;
+        margin-bottom: 110px;
     }
 }
 
 .header__content--gallery{
+    margin-bottom: 40px;
     @include media($tablet){
-        margin-bottom: 62px;
+        margin-bottom: 56px;
     }
     @include media($desktop){
         margin-bottom: 100px;
@@ -57,7 +61,7 @@
 }
 
 .header__pic{
-    padding: 90px 19px 85px 19px;
+    padding: 88px 19px;
     @include media($tablet){
         width: 461px;
         height: 350px;
@@ -71,6 +75,7 @@
 }
 
 .header__pic--form{
+    padding: 53px 19px;
     @include media($tablet){
         width: 460px;
         height: 80px;

@@ -1,11 +1,11 @@
 .adv {
     list-style-type: none;
-    margin: 0 0 38px;
+    margin: 0 0 46px;
     padding: 0;
     @include media($tablet) {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        margin-bottom: 60px;
+        margin-bottom: 68px;
     }
 }
 
@@ -25,8 +25,26 @@
     }
 }
 
+.adv__item--reverse {
+    @include media($tablet) {
+        grid-template-columns: 2fr 1fr;
+        margin-bottom: 0;
+    }
+}
+
+.adv__item--reverse .adv__pic {
+    order: -1;
+}
+
+.adv__item--forward{
+    margin-bottom: 24px;
+    @include media($tablet) {
+        margin-bottom: 55px;
+    }
+}
+
 .adv__pic{
-    height: 255px;
+    height: 260px;
 }
 
 .adv__list--decor::after {
@@ -34,7 +52,7 @@
     height: 37px;
     background: url('../img/decor-triangle-main.svg') no-repeat center top;
     position: absolute;
-    top: -1px;
+    top: -4px;
     right: 0;
     left: 0;
     @include media($tablet) {
@@ -48,20 +66,32 @@
     color: #fff;
     margin: 0;
     padding-bottom: 11px;
+    @include media($tablet) {
+        @include font(21px, 26px, 700, $basic-family);
+        max-width: 200px;
+        margin: 0 auto;
+    }
 }
 
 .adv__title {
     text-align: center;
-    padding: 60px 20px 40px;
+    padding: 68px 10px 40px;
     background-color: #81B3D2;
     @include media($tablet) {
+        padding: 40px 25px 40px;
+    }
+    @include media($desktop) {
+        padding-top: 50px;
     }
 }
 
 .adv__title--bridge {
-    padding: 39px 16px 35px 15px;
+    padding: 42px 16px 35px 15px;
     @include media($tablet) {
         padding: 42px  36px 41px;
+    }
+    @include media($desktop) {
+        padding-top: 56px;
     }
 }
 
@@ -71,6 +101,9 @@
     color: #fff;
     display: block;
     padding-bottom: 17px;
+    @include media($tablet) {
+        padding-bottom: 25px;
+    }
 }
 
 .adv__descr {
@@ -96,7 +129,7 @@
     @include media($tablet) {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        padding: 0 35px;
+        padding: 0 20px;
         margin-bottom: 59px;
         list-style-type: none;
         gap: 32px;
@@ -108,7 +141,7 @@
 
 .adv__about-item {
     display: flex;
-    padding-bottom: 22px;
+    padding-bottom: 20px;
     position: relative;
     @include media($tablet) {
         display: block;
@@ -125,12 +158,12 @@
     @include media($tablet) {
         width: 75px;
         height: 72px;
-        padding-bottom: 26px;
+        padding-bottom: 14px;
     }
 }
 
 .adv__about-title {
-    padding-left: 7px;
+    padding-left: 10px;
     @include media($tablet) {
         padding: 0;
     }
@@ -140,7 +173,11 @@
     @include font(18px, 26px, 700, $basic-family);
     text-transform: uppercase;
     margin: 0;
-    padding-bottom: 28px;
+    padding: 9px 0 16px;
+    @include media($tablet) {
+        @include font(21px, 26px, 700, $basic-family);
+        padding-bottom: 23px;
+    }
 }
 
 .adv__about-descr {
@@ -153,11 +190,48 @@
 
 .adv__etc {
     position: relative;
-    text-align: center;
-    padding: 26px 26px 24px 26px;
+    padding: 24px 26px 19px 26px;
     background-color: #eee;
     @include media($tablet) {
-        padding: 42px 0 63px 33px;
+        padding: 38px 63px 12px;
+        @include media($desktop) {
+            padding-top: 43px;
+            padding-bottom: 50px;
+    }
+}
+
+.adv__etc-heading {
+    @include font(18px, 26px, 700, $basic-family);
+    color: #000;
+    text-transform: uppercase;
+    margin: 0;
+    padding-bottom: 11px;
+    text-align: center;
+    @include media($tablet) {
+        @include font(21px, 26px, 700, $basic-family);
+        max-width: 150px;
+        margin: 0 auto;
+    }
+}
+
+.adv__etc-number {
+    @include font(14px, 21px, 400, $basic-family);
+    color: #000;
+    padding-bottom: 21px;
+    display: block;
+    text-align: center;
+    @include media($tablet) {
+        padding-bottom: 27px;
+    }
+}
+
+.adv__etc-descr {
+    max-width: 250px;
+    margin: 0 auto;
+    text-align: center;
+    @include font(14px, 21px, 400, $basic-family);
+    text-transform: uppercase;
+    color: #000;
 }
 
 .adv__etc:not(:last-child)::after {
@@ -172,41 +246,5 @@
     }
 }
 
-.adv__etc-heading {
-    @include font(18px, 26px, 700, $basic-family);
-    color: #000;
-    text-transform: uppercase;
-    margin: 0;
-    padding-bottom: 16px;
-}
 
-.adv__etc-number {
-    @include font(14px, 21px, 400, $basic-family);
-    color: #000;
-    padding-bottom: 20px;
-    display: block;
-}
-
-.adv__etc-descr {
-    max-width: 250px;
-    margin: 0 auto;
-    @include font(14px, 21px, 400, $basic-family);
-    text-transform: uppercase;
-    color: #000;
-}
-
-.adv__item--reverse .adv__pic {
-    order: -1;
-}
-
-.adv__item--reverse {
-    grid-template-columns: 2fr 1fr;
-    margin-bottom: 0;
-}
-}
-
-.adv__item--forward{
-    @include media($tablet) {
-        margin-bottom: 60px;
-    }
 }

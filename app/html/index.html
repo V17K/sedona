@@ -28,134 +28,134 @@
         fill="currentColor" />
     </symbol>
   </svg>
-
 </head>
 
 <body class="body">
   <div class="container">
-    <div class="header">
-      @@include('blocks/header.html')
-      <div class="header__content">
-        <img src="img/header-content.svg" alt="Заголовок" class="header__pic" width="282" height="214">
+    <div class="container__wrap">
+      <div class="header">
+        @@include('blocks/header.html')
+        <div class="header__content">
+          <img src="img/header-content.svg" alt="Заголовок" class="header__pic" width="282" height="214">
+        </div>
       </div>
+      <main class="main">
+        <section class="main__content">
+          <div class="content">
+            <h3 class="content__title">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h3>
+            <p class="content__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+          </div>
+          <ol class="adv">
+            <li class="adv__list adv__list--decor">
+              <div class="adv__item adv__item--forward">
+                <div class="adv__title">
+                  <h3 class="adv__heading">Настоящий городок</h3>
+                  <span class="adv__number">- №1 -</span>
+                  <p class="adv__descr">Седона нет аттракционов для туристов, там течет своя жизнь</p>
+                </div>
+                <div class="adv__pic">
+                  <img src="img/photo-city.jpg" alt="Фото города" class="adv__photo" width="320" height="260">
+                </div>
+              </div>
+              <ul class="adv__about">
+                <li class="adv__about-item">
+                  <img src="img/home.svg" alt="картинка дома" class="adv__about-pic" width="39" height="37">
+                  <div class="adv__about-title">
+                    <h3 class="adv__about-heading">Жилье</h3>
+                    <p class="adv__about-descr">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                  </div>
+                </li>
+                <li class="adv__about-item">
+                  <img src="img/eat.svg" alt="картинка дома" class="adv__about-pic" width="39" height="37">
+                  <div class="adv__about-title">
+                    <h3 class="adv__about-heading">Еда</h3>
+                    <p class="adv__about-descr">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                  </div>
+                </li>
+                <li class="adv__about-item">
+                  <img src="img/box.svg" alt="картинка дома" class="adv__about-pic" width="39" height="37">
+                  <div class="adv__about-title">
+                    <h3 class="adv__about-heading">Сувениры</h3>
+                    <p class="adv__about-descr">Не только китайского, но и местного производства!</p>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="adv__list">
+              <div class="adv__item adv__item--reverse">
+                <div class="adv__title adv__title--bridge ">
+                  <h3 class="adv__heading">Там есть мост дьявола</h3>
+                  <span class="adv__number">- №2 -</span>
+                  <p class="adv__descr">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+                </div>
+                <div class="adv__pic">
+                  <img src="img/photo-bridge.jpg" alt="Фото моста" class="adv__photo" width="320" height="260">
+                </div>
+              </div>
+            </li>
+            <li class="adv__etc">
+              <h3 class="adv__etc-heading">Небольшая площадь</h3>
+              <span class="adv__etc-number">- №3 -</span>
+              <p class="adv__etc-descr">Все интересные места находятся очень близко</p>
+            </li>
+            <li class="adv__etc">
+              <h3 class="adv__etc-heading">Красивая дорога</h3>
+              <span class="adv__etc-number">- №4 -</span>
+              <p class="adv__etc-descr">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </li>
+            <li class="adv__etc">
+              <h3 class="adv__etc-heading">Мало туристов</h3>
+              <span class="adv__etc-number">- №5 -</span>
+              <p class="adv__etc-descr">Большинство едет в гранд каньон и толпится там</p>
+            </li>
+          </ol>
+          <div class="search">
+            <div class="search__heading">
+              <h2 class="search__title">Заинтересовалсь?</h2>
+              <p class="search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
+                гостиниц в седоне</p>
+            </div>
+            <button class="btn btn--brand btn--medium" type="submit">Найти гостинницу</button>
+          </div>
+          <div class="map">
+            <img src="img/map.svg" alt="Карта" class="map-pic" width="1200px" height="350px">
+          </div>
+          <footer class="footer">
+            <a href="#" class="inst">#visitSEDONA</a>
+            <div class="footer__social">
+              <ul class="social">
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <svg class="social__pic">
+                      <use href="#vk" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <svg class="social__pic">
+                      <use href="#yt" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <svg class="social__pic">
+                      <use href="#Telegramm" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <a href="#" class="copywrite">Разработано
+              <svg class="copywrite__pic">
+                <use href="#copywrite" />
+              </svg>
+            </a>
+          </footer>
+        </section>
+      </main>
     </div>
-
-    <main class="main">
-      <section class="main__content">
-        <div class="content">
-          <h3 class="content__title">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h3>
-          <p class="content__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-        </div>
-        <ol class="adv">
-          <li class="adv__list adv__list--decor">
-            <div class="adv__item adv__item--forward">
-              <div class="adv__title">
-                <h3 class="adv__heading">Настоящий городок</h3>
-                <span class="adv__number">- №1 -</span>
-                <p class="adv__descr">Седона нет аттракционов для туристов, там течет своя жизнь</p>
-              </div>
-              <div class="adv__pic">
-                <img src="img/photo-city.jpg" alt="Фото города" class="adv__photo" width="320" height="260">
-              </div>
-            </div>
-            <ul class="adv__about">
-              <li class="adv__about-item">
-                <img src="img/home.svg" alt="картинка дома" class="adv__about-pic" width="39" height="37">
-                <div class="adv__about-title">
-                  <h3 class="adv__about-heading">Жилье</h3>
-                  <p class="adv__about-descr">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-                </div>
-              </li>
-              <li class="adv__about-item">
-                <img src="img/eat.svg" alt="картинка дома" class="adv__about-pic" width="39" height="37">
-                <div class="adv__about-title">
-                  <h3 class="adv__about-heading">Еда</h3>
-                  <p class="adv__about-descr">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-                </div>
-              </li>
-              <li class="adv__about-item">
-                <img src="img/box.svg" alt="картинка дома" class="adv__about-pic" width="39" height="37">
-                <div class="adv__about-title">
-                  <h3 class="adv__about-heading">Сувениры</h3>
-                  <p class="adv__about-descr">Не только китайского, но и местного производства!</p>
-                </div>
-              </li>
-            </ul>
-          </li>
-          <li class="adv__list">
-            <div class="adv__item adv__item--reverse">
-              <div class="adv__title adv__title--bridge ">
-                <h3 class="adv__heading">Там есть мост дьявола</h3>
-                <span class="adv__number">- №2 -</span>
-                <p class="adv__descr">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-              </div>
-              <div class="adv__pic">
-                <img src="img/photo-bridge.jpg" alt="Фото моста" class="adv__photo" width="320" height="260">
-              </div>
-            </div>
-          </li>
-          <li class="adv__etc">
-            <h3 class="adv__etc-heading">Небольшая площадь</h3>
-            <span class="adv__etc-number">- №3 -</span>
-            <p class="adv__etc-descr">Все интересные места находятся очень близко</p>
-          </li>
-          <li class="adv__etc">
-            <h3 class="adv__etc-heading">Красивая дорога</h3>
-            <span class="adv__etc-number">- №4 -</span>
-            <p class="adv__etc-descr">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </li>
-          <li class="adv__etc">
-            <h3 class="adv__etc-heading">Мало туристов</h3>
-            <span class="adv__etc-number">- №5 -</span>
-            <p class="adv__etc-descr">Большинство едет в гранд каньон и толпится там</p>
-          </li>
-        </ol>
-        <div class="search">
-          <div class="search__heading">
-            <h2 class="search__title">Заинтересовалсь?</h2>
-            <p class="search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
-              гостиниц в седоне</p>
-          </div>
-          <button class="btn btn--brand btn--medium" type="submit">Найти гостинницу</button>
-        </div>
-        <div class="map">
-          <img src="img/map.svg" alt="Карта" class="map-pic" width="1200px" height="350px">
-        </div>
-        <footer class="footer">
-          <a href="#" class="inst">#visitSEDONA</a>
-          <div class="footer__social">
-            <ul class="social">
-              <li class="social__item">
-                <a href="#" class="social__link">
-                  <svg class="social__pic">
-                    <use href="#vk" />
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a href="#" class="social__link">
-                  <svg class="social__pic">
-                    <use href="#yt" />
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a href="#" class="social__link">
-                  <svg class="social__pic">
-                    <use href="#Telegramm" />
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <a href="#" class="copywrite">Разработано
-            <svg class="copywrite__pic">
-              <use href="#copywrite" />
-            </svg>
-          </a>
-        </footer>
-      </section>
-    </main>
   </div>
 </body>
 <script>

@@ -1,7 +1,11 @@
 .attractions {
     @include media($tablet) {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @include media($desktop) {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 }
 
@@ -11,9 +15,6 @@
     padding-bottom: 16px;
     @include media($desktop) {
         padding-bottom: 0;
-    }
-    @include media($desktop-medium) {
-        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
     }
 }
 

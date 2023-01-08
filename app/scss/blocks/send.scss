@@ -1,12 +1,13 @@
 .send__review{
     text-align: center;
-    margin-bottom: 48px;
+    margin-bottom: 55px;
     padding: 0 20px;
     @include media($tablet) {
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 0;
+        margin-bottom: 95px;
     }
 }
 

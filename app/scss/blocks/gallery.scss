@@ -19,104 +19,115 @@
 }
 
 .gallery__item {
+    padding-bottom: 21px;
+    width: 100%;
     list-style-type: none;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     @include media($tablet) {
         margin-bottom: 0;
-    }
-    @include media($desktop) {
-        position: relative;
-    }
-}
-
-.gallery__item--bridge {
-    padding: 0;
-    margin-bottom: 0;
-}
-
-.gallery-pic {
-    width: 100%;
-    height: 280px;
-    display: block;
-    object-fit: cover;
-    padding-bottom: 15px;
-    @include media($tablet) {
+        width: 50%;
+        &:first-child,
+        &:last-child {
+            width: 100%;
+        }
         padding-bottom: 0;
     }
     @include media($desktop) {
-        height: 100%;
+        position: relative;
+        width: 33.333%;
+        &:last-child {
+            width: 33.333%;
+        }
     }
-}
 
-.gallery__content {
-    @include media($tablet) {
+    .gallery__item--bridge {
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    .gallery-pic {
+        width: 100%;
+        height: 280px;
+        display: block;
+        object-fit: cover;
+        padding-bottom: 16px;
+        @include media($tablet) {
+            padding-bottom: 0;
+        }
+        @include media($desktop) {
+            height: 100%;
+        }
+    }
+
+    .gallery__content {
+        @include media($tablet) {
+            display: flex;
+            justify-content: space-between;
+            background-color: #f2f2f2;
+            padding: 22px 20px 15px;
+        }
+        @include media($desktop) {
+            background-color: rgba(0, 0, 0, 0.3);
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+        }
+
+    }
+
+    .gallery__title {
+        @include font(14px, 21px, 700, $basic-family);
+        text-transform: uppercase;
+        padding: 0;
+        margin: 0;
+        @include media($desktop) {
+            color: #ffffff;
+        }
+    }
+
+    .gallery__descr {
+        @include font(14px, 21px, 400, $basic-family);
+        padding: 0;
+        margin: 0;
+        color: #333333;
+        @include media($desktop) {
+            color: #ffffff;
+        }
+    }
+
+    .gallery__like {
         display: flex;
-        justify-content: space-between;
-        background-color: #f2f2f2;
-        padding: 22px 20px 15px;
-    }
-    @include media($desktop) {
-        background-color: rgba(0, 0, 0, 0.3);
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        left: 0;
+        align-items: center;
     }
 
-}
+    .like__icon {
+        width: 23px;
+        height: 21px;
+        color: #000000;
+        @include media($desktop) {
+            color: #ffffff;
+        }
 
-.gallery__title {
-    @include font(14px, 21px, 700, $basic-family);
-    text-transform: uppercase;
-    padding: 0;
-    margin: 0;
-    @include media($desktop) {
-        color: #ffffff;
-    }
-}
 
-.gallery__descr {
-    @include font(14px, 21px, 400, $basic-family);
-    padding: 0;
-    margin: 0;
-    color: #333333;
-    @include media($desktop) {
-        color: #ffffff;
-    }
-}
-
-.gallery__like {
-    display: flex;
-    align-items: center;
-}
-
-.like__icon {
-    width: 23px;
-    height: 21px;
-    color: #000000;
-    @include media($desktop) {
-        color: #ffffff;
     }
 
-    
-}
 
-
-.like__descr {
-    @include font(14px, 21px, 700, $basic-family);
-    padding-left: 14px;
-    @include media($desktop) {
-        color: #ffffff;
-    }
-}
-
-
-.gallery--secondary {
-    @include media($tablet) {
-        background-color: #EAEAEA;
-    }
-    @include media($desktop) {
-        background-color: rgba(0, 0, 0, 0.3);
+    .like__descr {
+        @include font(14px, 21px, 700, $basic-family);
+        padding-left: 14px;
+        @include media($desktop) {
+            color: #ffffff;
+        }
     }
 
+    .gallery--secondary {
+        @include media($tablet) {
+            background-color: #EAEAEA;
+        }
+        @include media($desktop) {
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+    }
 }

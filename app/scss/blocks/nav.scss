@@ -7,14 +7,17 @@
     transition: opacity 0.2s ease;
     overflow: auto;
     opacity: 0;
+    visibility: hidden;
     @include media($tablet){
         position: static;
         opacity: 1;
         transition: none;
+        visibility: visible;
     }
 }
 .nav._active {
     opacity: 1;
+    visibility: visible;
 }
 
 .nav__list {

@@ -1,6 +1,6 @@
 .fieldset {
     border: 0;
-    margin: 0 0 30px;
+    margin: 0 0 60px;
     position: relative;
     padding: 0 20px;
     @include media($tablet) {
@@ -15,11 +15,18 @@
 .fieldset--contact:first-child {
     @include media($tablet) {
         padding-right: 43px;
-        margin-right: 23px;
     }
     @include media($desktop) {
-        padding-right: 63px;
-        margin-right: 43px;
+        padding-right: 10px;
+    }
+}
+
+.fieldset--contact--mail {
+    @include media($tablet) {
+        padding-left: 43px;
+    }
+    @include media($desktop) {
+        padding-left: 50px;
     }
 }
 
@@ -35,18 +42,24 @@
 }
 
 .fieldset--choice {
+    margin-bottom: 30px;
     @include media($tablet) {
         grid-column: 1/-1;
         border-top: 1px solid #DBDBDB;
+    }
+    @include media($desktop) {
+        padding: 0 75px;
+        margin-bottom: 58px;
     }
 }
 
 .fieldset--feedback {
+    margin-bottom: 34px;
     @include media($tablet) {
         grid-column: 1/-1;
         height: 160px;
-        margin-bottom: 48px;
+        margin-bottom: 100px;
         border-top: 1px solid #DBDBDB;
-        padding: 0;
     }
+
 }

@@ -3,10 +3,10 @@
     @include font(18px, 26px, 700, $basic-family);
     text-transform: uppercase;
     color: #000;
-    padding-bottom: 20px;
+    padding-bottom: 21px;
     @include media($tablet){
         @include font(21px, 26px, 700, $basic-family);
-        margin-bottom: 28px;
+        margin-bottom: 7px;
     }
 }
 
@@ -14,13 +14,17 @@
     @include media($tablet){
         padding: 0 60px;
         max-width: 400px;
+        margin-bottom: 28px;
+    }
+    @include media($desktop) {
+        margin-bottom: 45px;
     }
 }
 
 .legend--feedback{
     @include media($tablet){
         padding: 0 60px;
-        
+        margin-bottom: 23px;
     }
     
 }

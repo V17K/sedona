@@ -3,7 +3,7 @@
     background-color: transparent;
     color: #000;
     text-decoration: none;
-    font: 700 18px / 24px sans-serif;
+    font: 700 18px /24px sans-serif;
     cursor: pointer;
     border-radius: 0;
     padding: 4px 8px;
@@ -29,9 +29,9 @@
 }
 
 .btn--medium {
-    padding: 16px 50px;
+    padding: 17px 47px;
     @include media($tablet){
-        padding: 15px 121px;
+        padding: 16px 133px;
     }
 }
 
@@ -63,4 +63,28 @@
         margin: 0 auto;
     }
 }
+
+.button__play {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 27px solid transparent;
+    border-left: 48px solid rgba(255, 255, 255, 0.7);
+    border-bottom: 27px solid transparent;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border-right: none;
+    cursor: pointer;
+    transition: border-color .2s ease, transform .2s ease;
+    
+    &:hover{
+        border-left-color: #fff;
+        transform: scale(1.1) translate(-50%, -50%);
+    }
+}
+
 

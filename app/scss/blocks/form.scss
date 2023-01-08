@@ -1,9 +1,11 @@
 .form{
     @include media($tablet) {
-    margin: 0 60px;
+    margin: 0 40px;
+    @include media($desktop) {
+        margin: 0 100px;
+    }
 }
 }
-
 
 .form__field {
     position: relative;

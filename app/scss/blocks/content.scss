@@ -1,6 +1,6 @@
 .content {
     text-align: center;
-    max-width: 270px;
+    max-width: 268px;
     margin: 0 auto 20px;
     @include media($tablet) {
         max-width: 485px;
@@ -13,11 +13,12 @@
 
 .content__title {
     text-transform: uppercase;
-    padding-bottom: 35px;
+    padding-bottom: 34px;
     margin: 0;
     @include font(18px, 26px, 700, $basic-family);
     @include media($tablet) {
-        padding-bottom: 38px;
+        padding-bottom: 27px;
+        @include font(21px, 26px, 700, $basic-family);
     }
 }
 
@@ -29,7 +30,7 @@
     }
     @include media($desktop) {
         @include font(30px, 26px, 700, $basic-family);
-        padding-bottom: 37px;
+        padding-bottom: 32px;
     }
 }
 
@@ -45,24 +46,27 @@
 }
 
 .content--form {
-    margin-bottom: 28px;
+    margin-bottom: 53px;
     @include media($tablet) {
-        margin-bottom: 102px;
+        margin-bottom: 108px;
+    }
+    @include media($desktop) {
+        margin-bottom: 70px;
     }
 }
 
 .content__small{
-    margin-bottom: 50px;
+    margin-bottom: 45px;
     @include media($tablet){
-        margin-bottom: 62px;
-    }
-    @include media($tablet){
-        margin-bottom: 65px;
+        margin-bottom: 86px;
     }
 }
 
 .content__title--small{
+    padding-bottom: 26px;
     @include media($tablet) {
-        @include font(30px, 2px, 700, $basic-family);
+        @include font(30px, 26px, 700, $basic-family);
+        padding-bottom: 31px;
     }
+
 }

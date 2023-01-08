@@ -1,5 +1,5 @@
 .field:not(:last-child){
-    padding-bottom: 16px;
+    padding-bottom: 15px;
 }
 .field:last-child{
     @include media($tablet){
@@ -74,9 +74,13 @@
 
 
 .field__input--area{
-    height: 120px;
+    height: 150px;
     margin-bottom: 26px;
     resize: none;
     width: 100%;
     box-sizing: border-box;
+    @include media($tablet){
+        height: 160px;
+    }
+
 }
