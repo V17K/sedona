@@ -28,3 +28,9 @@
     }
     
 }
+
+.legend--sight{
+    @include media($desktop) {
+        margin-bottom: 57px;
+    }
+}

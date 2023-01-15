@@ -6,10 +6,13 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 0;
+        padding: 0 20px;
         margin-bottom: 95px;
     }
-}
+    @include media($desktop) {
+        margin-bottom: 100px;
+        }
+    }
 
 .send__descr{
     text-align: right;

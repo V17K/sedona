@@ -2,6 +2,10 @@
     @include media($tablet) {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        padding: 0 26px;
+    }
+    @include media($desktop) {
+        padding: 0;
     }
 }
 
